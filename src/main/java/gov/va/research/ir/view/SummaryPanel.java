@@ -178,7 +178,7 @@ public class SummaryPanel extends JPanel implements PropertyChangeListener, PdfE
 				tabbedPane.addChangeListener(new ChangeListener() {    //For running Medication on click
 					public void stateChanged(ChangeEvent ce){
 
-						JTabbedPane sourceTabbedPane = (JTabbedPane) ce.getSource();s
+						JTabbedPane sourceTabbedPane = (JTabbedPane) ce.getSource();
 						if (sourceTabbedPane.getTitleAt(sourceTabbedPane.getSelectedIndex()) == "Medications" ){
 							System.err.println("Medication tab selected");
 							actionListener.actionPerformed(new ActionEvent( drugPanel,ActionEvent.ACTION_LAST, Command.TopMedications.toString()));

@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: gov.va.research:v3nlp-common:2012.06.2">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/gov/va/research/v3nlp-common/2012.06.2/v3nlp-common-2012.06.2.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/gov/va/research/v3nlp-common/2012.06.2/v3nlp-common-2012.06.2-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/gov/va/research/v3nlp-common/2012.06.2/v3nlp-common-2012.06.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

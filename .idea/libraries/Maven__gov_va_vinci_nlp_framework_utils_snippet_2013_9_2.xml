@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="Maven: gov.va.vinci.nlp.framework:utils.snippet:2013.9.2">
+    <CLASSES>
+      <root url="jar://$MAVEN_REPOSITORY$/gov/va/vinci/nlp/framework/utils.snippet/2013.9.2/utils.snippet-2013.9.2.jar!/" />
+    </CLASSES>
+    <JAVADOC>
+      <root url="jar://$MAVEN_REPOSITORY$/gov/va/vinci/nlp/framework/utils.snippet/2013.9.2/utils.snippet-2013.9.2-javadoc.jar!/" />
+    </JAVADOC>
+    <SOURCES>
+      <root url="jar://$MAVEN_REPOSITORY$/gov/va/vinci/nlp/framework/utils.snippet/2013.9.2/utils.snippet-2013.9.2-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

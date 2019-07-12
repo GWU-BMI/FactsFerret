@@ -128,7 +128,7 @@ public class VoogleView implements SearchResultDisplayer<SearchPanel.SearchRow> 
 		ThreadUtils.runOnEDT(new Runnable() {
 			public void run() {
 				setLookAndFeel();
-				URL logoURL = this.getClass().getResource(/*"/logo.gif"*/"/img/Facts-Ferret.png");
+				URL logoURL = this.getClass().getResource(/*"/logo.gif"*/"/img/Voogo-arrow.png");
 				ImageIcon logo = new ImageIcon(logoURL);
 				JLabel logoLabel = new JLabel(logo);
 				logoLabel.setAlignmentX(JLabel.CENTER_ALIGNMENT);
