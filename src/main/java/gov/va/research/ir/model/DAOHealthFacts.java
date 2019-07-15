@@ -59,7 +59,7 @@ public class DAOHealthFacts implements DAODataSource {
     static final String TEMP_E_YEAR_TABLE= "tmp_enc" + UUID3;
 
     //static final String TEMP_DIAGNOSIS_TABLE= "temp_enc" + UUID3;
-
+  //
 
 
     private DataSource dataSource;
