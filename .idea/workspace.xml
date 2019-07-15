@@ -1,0 +1,525 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="a9cef043-bbd6-426d-b87f-dca27cb38777" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/log/query.log" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/META-INF/factsferret.kotlin_module" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/US.dbf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/US.prj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/US.qpj" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/US.shp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/US.shx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/Voogo – Phase 1 User Guide.docx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/county_coordinates.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/data/config/lvg.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/CollectionUtils$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/CollectionUtils$TopQueue.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/CollectionUtils$ValueComparator.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/CollectionUtils.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/FactsFerret$1$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/FactsFerret$1$2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/FactsFerret$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/FactsFerret.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/SearchUtils.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/ThreadUtils.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/controller/VoogoController$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/controller/VoogoController$1DiagGa.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/controller/VoogoController$1DrugGa.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/controller/VoogoController$1E_DiagGa.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/controller/VoogoController$1E_DrugGa.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/controller/VoogoController$1E_Lab_Result.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/controller/VoogoController$1Lab_Result.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/controller/VoogoController$3.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/controller/VoogoController$4$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/controller/VoogoController$4$2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/controller/VoogoController$4.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/controller/VoogoController$5.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/controller/VoogoController$Job.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/controller/VoogoController.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/model/BoolOp$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/model/BoolOp.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/model/CodeNameCount.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/model/Command.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/model/Context.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/model/County.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/model/CountyCoordinatesDataSource.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/model/DAO.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/model/DAODataSource.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/model/DAOHealthFacts$PreOrder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/model/DAOHealthFacts.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/model/DataSources.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/model/DocSampleType.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/model/Field$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/model/Field.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/model/FieldValue.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/model/LatLon.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/model/NameCount.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/model/PatientDocumentIDs.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/model/QueryExpander.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/model/ResultsWriter.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/model/SampleOutputType.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/model/SaveFile.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/model/SaveType$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/model/SaveType.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/model/SearchResult$Encounter.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/model/SearchResult$MyList.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/model/SearchResult$PDiag.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/model/SearchResult$PLResult.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/model/SearchResult$PMedication.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/model/SearchResult$Patient.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/model/SearchResult$PatientEncounterComparator.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/model/SearchResult.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/model/SearchTerm.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/model/SearchWorker$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/model/SearchWorker$10.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/model/SearchWorker$11.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/model/SearchWorker$12.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/model/SearchWorker$13.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/model/SearchWorker$2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/model/SearchWorker$3.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/model/SearchWorker$4.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/model/SearchWorker$5.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/model/SearchWorker$6.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/model/SearchWorker$7.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/model/SearchWorker$8.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/model/SearchWorker$9.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/model/SearchWorker$ListRef.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/model/SearchWorker$SearchState.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/model/SearchWorker$SummaryResults.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/model/SearchWorker.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/model/StopWords.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/view/AbstractMapPanel.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/view/AnimatedIcon$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/view/AnimatedIcon$IterateImageTimerTask.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/view/AnimatedIcon.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/view/CLIView$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/view/CLIView.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/view/CategoryChartPanel$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/view/CategoryChartPanel$2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/view/CategoryChartPanel.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/view/CategoryListPanel$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/view/CategoryListPanel$2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/view/CategoryListPanel$3.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/view/CategoryListPanel$4.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/view/CategoryListPanel.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/view/ChartBuilder.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/view/DataSourceDefinitionDialog.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/view/DetailPanel$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/view/DetailPanel$2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/view/DetailPanel$3.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/view/DetailPanel$4.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/view/DetailPanel$5$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/view/DetailPanel$5.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/view/DetailPanel$PatientAndEncounterCellRenderer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/view/DetailPanel.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/view/HistogramPanel$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/view/HistogramPanel$2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/view/HistogramPanel.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/view/JIconButton.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/view/JLinkButton.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/view/MapFetcher$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/view/MapFetcher$2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/view/MapFetcher.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/view/MapPanel$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/view/MapPanel$2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/view/MapPanel.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/view/MapPanel2$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/view/MapPanel2$2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/view/MapPanel2$3.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/view/MapPanel2$4.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/view/MapPanel2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/view/OverviewPanel$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/view/OverviewPanel$2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/view/OverviewPanel.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/view/PdfExportable.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/view/SaveDialog$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/view/SaveDialog$ActionCommand.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/view/SaveDialog$DetailsPanel$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/view/SaveDialog$DetailsPanel.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/view/SaveDialog.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/view/SearchPanel$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/view/SearchPanel$2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/view/SearchPanel$3.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/view/SearchPanel$DisplayRow$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/view/SearchPanel$DisplayRow$2$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/view/SearchPanel$DisplayRow$2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/view/SearchPanel$DisplayRow.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/view/SearchPanel$SearchRow$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/view/SearchPanel$SearchRow$2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/view/SearchPanel$SearchRow$3.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/view/SearchPanel$SearchRow$4.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/view/SearchPanel$SearchRow$5.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/view/SearchPanel$SearchRow.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/view/SearchPanel.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/view/SearchResultDisplayer.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/view/SummaryPanel$1$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/view/SummaryPanel$1$2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/view/SummaryPanel$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/view/SummaryPanel$10.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/view/SummaryPanel$11.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/view/SummaryPanel$12.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/view/SummaryPanel$2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/view/SummaryPanel$3.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/view/SummaryPanel$4.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/view/SummaryPanel$5.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/view/SummaryPanel$6.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/view/SummaryPanel$7.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/view/SummaryPanel$8.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/view/SummaryPanel$9.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/view/SummaryPanel.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/view/ViewState.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/view/ViewUtils.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/view/VoogleView$1$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/view/VoogleView$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/view/VoogleView$10.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/view/VoogleView$11$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/view/VoogleView$11.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/view/VoogleView$12.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/view/VoogleView$13$1.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/view/VoogleView$13.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/view/VoogleView$14.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/view/VoogleView$15.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/view/VoogleView$16.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/view/VoogleView$17.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/view/VoogleView$2.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/view/VoogleView$3.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/view/VoogleView$4.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/view/VoogleView$5.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/view/VoogleView$6.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/view/VoogleView$7.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/view/VoogleView$8.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/view/VoogleView$9.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/view/VoogleView.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/Facts-Ferret.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/checkDoc.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/female.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/loading-icon.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/logo.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/male.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/newrow-16x16.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/questionImage.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/rmrow-16x16.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/img/splash.gif" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/classes/logback.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/gov/va/research/ir/view/ChartBuilderTest.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/target/test-classes/gov/va/research/ir/view/MapPanelTest.class" afterDir="false" />
+    </list>
+    <ignored path="$PROJECT_DIR$/target/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/gov/va/research/ir/view/SummaryPanel.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1590">
+              <caret line="180" column="84" selection-start-line="180" selection-start-column="84" selection-end-line="180" selection-end-column="84" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/gov/va/research/ir/view/VoogleView.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="177">
+              <caret line="134" column="62" selection-start-line="134" selection-start-column="62" selection-end-line="134" selection-end-column="62" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/gov/va/research/ir/ThreadUtils.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="195">
+              <caret line="27" selection-start-line="27" selection-end-line="27" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/scripts/start-voogo.sh">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="3" selection-start-line="3" selection-end-line="3" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>factsfe</find>
+      <find>.PNG</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/main/java/gov/va/research/ir/view/SummaryPanel.java" />
+        <option value="$PROJECT_DIR$/src/scripts/start-voogo.bat" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/scripts/start-voogo.sh" />
+        <option value="$PROJECT_DIR$/src/main/java/gov/va/research/ir/view/VoogleView.java" />
+        <option value="$PROJECT_DIR$/src/main/java/gov/va/research/ir/Facts-Ferret.java" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="1">
+    <option name="x" value="50" />
+    <option name="y" value="36" />
+    <option name="width" value="1503" />
+    <option name="height" value="898" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="factsferret" type="b2602c69:ProjectViewProjectNode" />
+              <item name="F" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="factsferret" type="b2602c69:ProjectViewProjectNode" />
+              <item name="F" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="factsferret" type="b2602c69:ProjectViewProjectNode" />
+              <item name="F" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="factsferret" type="b2602c69:ProjectViewProjectNode" />
+              <item name="F" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="factsferret" type="b2602c69:ProjectViewProjectNode" />
+              <item name="F" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="ir" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="project.structure.last.edited" value="Project" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="FactsFerret" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="gov.va.research.ir.FactsFerret" />
+      <module name="factsferret" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.FactsFerret" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="a9cef043-bbd6-426d-b87f-dca27cb38777" name="Default Changelist" comment="" />
+      <created>1562960779827</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1562960779827</updated>
+      <workItem from="1562960781120" duration="328000" />
+      <workItem from="1562961485428" duration="1135000" />
+    </task>
+    <task id="LOCAL-00001" summary="NEW EDITS">
+      <created>1562961534939</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1562961534940</updated>
+    </task>
+    <task id="LOCAL-00002" summary="NEW EDITION">
+      <created>1562962179045</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1562962179045</updated>
+    </task>
+    <task id="LOCAL-00003" summary="NEW EDITION">
+      <created>1562962401077</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1562962401077</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="1463000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="50" y="36" width="1503" height="898" extended-state="0" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.22742936" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="UI Designer" order="3" />
+      <window_info id="Favorites" order="4" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32849604" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Spring" order="9" />
+      <window_info anchor="bottom" id="Database Changes" order="10" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.32849604" />
+      <window_info anchor="bottom" id="Terminal" order="13" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Database" order="4" />
+      <window_info anchor="right" id="Maven" order="5" />
+      <window_info anchor="right" id="Palette&#9;" order="6" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="NEW EDITS" />
+    <MESSAGE value="NEW EDITION" />
+    <option name="LAST_COMMIT_MESSAGE" value="NEW EDITION" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/java/gov/va/research/ir/view/SummaryPanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1590">
+          <caret line="180" column="84" selection-start-line="180" selection-start-column="84" selection-end-line="180" selection-end-column="84" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/gov/va/research/ir/ThreadUtils.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="195">
+          <caret line="27" selection-start-line="27" selection-end-line="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/scripts/start-voogo.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/gov/va/research/ir/Voogo.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="18" column="10" selection-start-line="18" selection-start-column="7" selection-end-line="18" selection-end-column="10" />
+          <folding>
+            <element signature="e#0#2014#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/gov/va/research/ir/Facts-Ferret.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="150">
+          <caret line="33" column="7" selection-start-line="33" selection-start-column="7" selection-end-line="33" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/gov/va/research/ir/view/VoogleView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="177">
+          <caret line="134" column="62" selection-start-line="134" selection-start-column="62" selection-end-line="134" selection-end-column="62" />
+        </state>
+      </provider>
+    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>
