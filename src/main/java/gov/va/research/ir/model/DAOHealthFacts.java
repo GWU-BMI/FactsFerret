@@ -171,8 +171,8 @@ public class DAOHealthFacts implements DAODataSource {
 
         else {
 
-//         fromSB.append("  hf_jul_2016.hf_f_encounter e inner join (select enc_year from hf_jul_2016.hf_for_query_purpose where enc_year = 2016 ) qp on e.year = qp.enc_year ");
-            fromSB.append(db +".hf_f_encounter_2016 e ");
+         fromSB.append("  hf_jul_2016.hf_f_encounter_bigtab e inner join (select enc_year from hf_jul_2016.hf_for_query_purpose where enc_year = 2016 ) qp on e.enc_year = qp.enc_year ");
+//            fromSB.append(db +".hf_f_encounter_2016 e ");
 
         }
 
@@ -224,7 +224,7 @@ public class DAOHealthFacts implements DAODataSource {
 
         if (include_columns_non_encounter){
             if (queryFields.contains(Field.GENDER)) {
-                patientSQL = patientSQL + " inner join hf_jul_2016.hf_d_patient p on p.patient_id= e.patient_id and p.gender= '"+fieldValueMap.get(Field.GENDER).get(0).term+"'";
+            //    patientSQL = patientSQL + " inner join hf_jul_2016.hf_d_patient p on p.patient_id= e.patient_id and p.gender= '"+fieldValueMap.get(Field.GENDER).get(0).term+"'";
                 patientSQL = patientSQL + "  and e.gender::citext = '"+fieldValueMap.get(Field.GENDER).get(0).term+"'";
 
             }
@@ -254,14 +254,9 @@ public class DAOHealthFacts implements DAODataSource {
                         patientSQL = patientSQL + " inner join " + db + ".hf_f_diagnosis" +  " df on df.encounter_id=e.encounter_id" +
                                 " inner join hf_jul_2016.hf_d_diagnosis dd on dd.diagnosis_id = df.diagnosis_id and dd.diagnosis_description::citext in (" + tmp + ")";
                     } else
-//                        patientSQL = patientSQL + " inner join " + db + ".hf_f_diagnosis df on df.encounter_id=e.encounter_id" +
-//                                " inner join hf_jul_2016.hf_d_diagnosis dd on dd.diagnosis_id = df.diagnosis_id " + "   and  " +
-//                                "dd.diagnosis_description::citext = '" + fieldValueMap.get(Field.DIAGNOSIS).get(0).term + "'";
-
-                    patientSQL = patientSQL + " where e.encounter_id in ( 345542539,	345494618,	345444188,	345552087,	345491080,	345509845,	351906353,	345430019,	334405888,	338799296,	334501709	) " ;
-
-
-
+                        patientSQL = patientSQL + " inner join " + db + ".hf_f_diagnosis df on df.encounter_id=e.encounter_id" +
+                                " inner join hf_jul_2016.hf_d_diagnosis dd on dd.diagnosis_id = df.diagnosis_id " + "   and  " +
+                                "dd.diagnosis_description::citext = '" + fieldValueMap.get(Field.DIAGNOSIS).get(0).term + "'";
 
                 }
             }
@@ -846,10 +841,14 @@ public class DAOHealthFacts implements DAODataSource {
 //                        " GROUP BY gender "
 
                 "SELECT gender, COUNT(gender) "+
-                        " FROM (select distinct patient_id, case when gender in('Null' ,'NULL', 'Not Mapped', 'Other') then 'Unknown' " +
+                        " FROM (select distinct patient_id, case when gender = 'Unknown/Invalid' then 'Unknown' " +
                         "else gender end as gender from  "  + TEMP_PATIENT_TABLE +
                            " ) ma " +
                         " GROUP BY gender "
+
+//                "SELECT gender, COUNT(gender) "+
+//                        " from  "  + TEMP_PATIENT_TABLE +
+//                        " GROUP BY gender "
 
 
 
@@ -870,8 +869,8 @@ public class DAOHealthFacts implements DAODataSource {
 //                "SELECT race, COUNT(race) FROM (select distinct s.patient_id, case when race in('Null' ,'NULL', 'Not Mapped', 'Other') then 'Unknown' " +
 //                        "else race end as Race from  " +TEMP_PATIENT_TABLE + " s inner join hf_jul_2016.hf_d_patient p  ON p.patient_id = s.patient_id) Se group by race"
 
-                "SELECT race, COUNT(race) FROM (select distinct s.patient_id, case when race in('Null' ,'NULL', 'Not Mapped', 'Other') then 'Unknown' " +
-                        "else race end as Race from  " +TEMP_PATIENT_TABLE + " s ) Se group by race"
+                " SELECT race, COUNT(race)  " +
+                        " from  " +TEMP_PATIENT_TABLE + " group by race "
 
 
 
@@ -884,12 +883,12 @@ public class DAOHealthFacts implements DAODataSource {
 
         return findStringDistribution2(
 
-//                " select generic_name, count(generic_name) from hf_jul_2016.hf_d_medication dm " +
-//                        " inner join hf_jul_2016.hf_f_medication fm on dm.medication_id=fm.medication_id " +
-//                        " inner join " + TEMP_PATIENT_TABLE  +  " e on e.encounter_id=fm.encounter_id  "
-//                      +" group by generic_name order by count(generic_name) desc limit 25 "
+                " select generic_name, count(generic_name) from hf_jul_2016.hf_d_medication dm " +
+                        " inner join hf_jul_2016.hf_f_medication fm on dm.medication_id=fm.medication_id " +
+                        " inner join " + TEMP_PATIENT_TABLE  +  " e on e.encounter_id=fm.encounter_id  "
+                      +" group by generic_name order by count(generic_name) desc limit 25 "
 
-                        " select generic_name, count from hf_jul_2016.Top_Medication "
+ //                       " select generic_name, count from hf_jul_2016.Top_Medication "
 
         );
     }
@@ -901,19 +900,19 @@ public class DAOHealthFacts implements DAODataSource {
 
 
         return findStringDistribution2(
-//
-//            "    select diagnosis_description, count(diagnosis_description) " +
-//             "   from hf_jul_2016.hf_d_diagnosis dd " +
-//              "  inner join hf_jul_2016.hf_f_diagnosis fd on dd.diagnosis_id=fd.diagnosis_id " +
-//                    "  inner join hf_jul_2016.hf_f_encounter e on e.encounter_id = fd.encounter_id " +
-//              "  inner join " + TEMP_PATIENT_TABLE  +  " tmp on tmp.patient_id=e.patient_id " +
-//
-//              "  group by diagnosis_description  order by count(diagnosis_description) desc limit 25 "
+
+            "    select diagnosis_description, count(diagnosis_description) " +
+             "   from hf_jul_2016.hf_d_diagnosis dd " +
+              "  inner join hf_jul_2016.hf_f_diagnosis fd on dd.diagnosis_id=fd.diagnosis_id " +
+                    "  inner join hf_jul_2016.hf_f_encounter e on e.encounter_id = fd.encounter_id " +
+              "  inner join " + TEMP_PATIENT_TABLE  +  " tmp on tmp.patient_id=e.patient_id " +
+
+              "  group by diagnosis_description  order by count(diagnosis_description) desc limit 25 "
 
 
 
 
-                " select diagnosis_description, count from hf_jul_2016.Top_Condition "
+    //            " select diagnosis_description, count from hf_jul_2016.Top_Condition "
 
         );
 
@@ -952,14 +951,6 @@ public class DAOHealthFacts implements DAODataSource {
 //        );
 //
 //    }
-
-
-
-
-
-
-
-
 
 
 

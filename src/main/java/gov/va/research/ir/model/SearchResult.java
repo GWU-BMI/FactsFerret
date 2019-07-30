@@ -94,7 +94,7 @@ public class SearchResult {
         @Override
         public String toString() {
 
-             return "  "+text + "     Length of stay: " + type  + " " + id ;
+             return "  "+text + "     Length of stay: " + type  ;
         }
 
     }

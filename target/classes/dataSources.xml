@@ -16,23 +16,23 @@
 	<!--	</bean>-->
 
 <!-- OLD Postgres -->
-	<bean id="dataSourceHealthFacts" class="org.apache.commons.dbcp.BasicDataSource"
-		  destroy-method="close" lazy-init="true">
-		<property name="driverClassName" value="org.postgresql.Driver" />
-		<property name="url" value="jdbc:postgresql://128.164.120.34/hf?user=postgres&amp;password=nlprules" />
-		<property name="maxActive" value="15" />
-		<property name="maxWait" value="1" />
-	</bean>
-
-
-	<!-- NEW Postgres -->
 	<!--<bean id="dataSourceHealthFacts" class="org.apache.commons.dbcp.BasicDataSource"-->
 		  <!--destroy-method="close" lazy-init="true">-->
 		<!--<property name="driverClassName" value="org.postgresql.Driver" />-->
-		<!--<property name="url" value="jdbc:postgresql://ctsi.smhs.gwu.edu/hf?user=postgres&amp;password=JhZ[9k)0}U.&lt;OWYOqD&amp;ssl=true&amp;sslfactory=org.postgresql.ssl.NonValidatingFactory" />-->
+		<!--<property name="url" value="jdbc:postgresql://128.164.120.34/hf?user=postgres&amp;password=nlprules" />-->
 		<!--<property name="maxActive" value="15" />-->
 		<!--<property name="maxWait" value="1" />-->
 	<!--</bean>-->
+
+
+	<!-- NEW Postgres -->
+	<bean id="dataSourceHealthFacts" class="org.apache.commons.dbcp.BasicDataSource"
+		  destroy-method="close" lazy-init="true">
+		<property name="driverClassName" value="org.postgresql.Driver" />
+		<property name="url" value="jdbc:postgresql://ctsi.smhs.gwu.edu/hf?user=postgres&amp;password=JhZ[9k)0}U.&lt;OWYOqD&amp;ssl=true&amp;sslfactory=org.postgresql.ssl.NonValidatingFactory" />
+		<property name="maxActive" value="15" />
+		<property name="maxWait" value="1" />
+	</bean>
 
 
 
