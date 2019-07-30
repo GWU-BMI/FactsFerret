@@ -221,7 +221,7 @@ public class VoogleView implements SearchResultDisplayer<SearchPanel.SearchRow> 
 
 				queryRecommendationButton = new JButton("Query Recommendation");
 				queryRecommendationButton.setActionCommand(Command.QUERYRECOMMENDATION.toString());
-				queryRecommendationButton.setVisible(false);
+				queryRecommendationButton.setVisible(true);
 
 				queryRecommendationButton.addActionListener(actionListener);
 				optionsPanel.add(queryRecommendationButton);
@@ -1113,7 +1113,7 @@ public class VoogleView implements SearchResultDisplayer<SearchPanel.SearchRow> 
 	public void displayHelp() {
 		JOptionPane.showMessageDialog(frame, "<html>Search Rules:<br><ul>" +
 				"<li>All search criteria are case insensitive.</li>" +
-				"<li>Search criteria for field types other than <em>Document Text</em> may use the * wildcard.</li>" +
+				"<li>Search criteria for field types may use the * wildcard.</li>" +
 				"<li>Numeric ranges may be specified using two numbers separated by a hyphen (e.g. 5-10).</li>" +
 				"<li>Numeric ranges may also be specified by using &gt; and &lt; symbols (e.g. &gt;3).</li>" +
 				"<li>The <em>Age</em> field matches age at the time of the visit.</li>" +

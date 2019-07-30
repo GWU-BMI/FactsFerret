@@ -2,16 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a9cef043-bbd6-426d-b87f-dca27cb38777" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/log/query.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/query.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gov/va/research/ir/model/DAOHealthFacts.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gov/va/research/ir/model/DAOHealthFacts.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gov/va/research/ir/model/SearchResult.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gov/va/research/ir/model/SearchResult.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/gov/va/research/ir/model/DAOHealthFacts$PreOrder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/model/DAOHealthFacts$PreOrder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/gov/va/research/ir/model/DAOHealthFacts.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/model/DAOHealthFacts.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/gov/va/research/ir/model/SearchResult$Encounter.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/model/SearchResult$Encounter.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/gov/va/research/ir/view/VoogleView$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/view/VoogleView$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gov/va/research/ir/view/VoogleView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gov/va/research/ir/view/VoogleView.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Voogo – Phase 1 User Guide.docx" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Voogo – Phase 1 User Guide.docx" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -44,7 +36,7 @@
         <entry file="file://$PROJECT_DIR$/src/main/java/gov/va/research/ir/model/SearchResult.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="330">
-              <caret line="28" column="2" lean-forward="true" selection-start-line="28" selection-start-column="2" selection-end-line="28" selection-end-column="2" />
+              <caret line="28" column="2" selection-start-line="28" selection-start-column="2" selection-end-line="28" selection-end-column="2" />
               <folding>
                 <element signature="e#0#8272#0" expanded="true" />
               </folding>
@@ -55,8 +47,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/gov/va/research/ir/model/DAOHealthFacts.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="309">
-              <caret line="956" lean-forward="true" selection-start-line="956" selection-end-line="956" />
+            <state relative-caret-position="225">
+              <caret line="1009" lean-forward="true" selection-start-line="1009" selection-end-line="1009" />
             </state>
           </provider>
         </entry>
@@ -86,10 +78,11 @@
       <find>factsfe</find>
       <find>.PNG</find>
       <find>enc_new</find>
-      <find>Query re</find>
       <find>Query rec</find>
       <find>medication</find>
       <find>distribution</find>
+      <find>Query re</find>
+      <find>Search criteria</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -110,14 +103,16 @@
         <option value="$PROJECT_DIR$/src/main/java/gov/va/research/ir/Facts-Ferret.java" />
         <option value="$PROJECT_DIR$/src/main/resources/dataSources.xml" />
         <option value="$PROJECT_DIR$/src/main/java/gov/va/research/ir/model/SearchResult.java" />
-        <option value="$PROJECT_DIR$/src/main/java/gov/va/research/ir/view/VoogleView.java" />
         <option value="$PROJECT_DIR$/src/main/java/gov/va/research/ir/model/DAOHealthFacts.java" />
+        <option value="$PROJECT_DIR$/src/main/java/gov/va/research/ir/view/VoogleView.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
+  <component name="ProjectFrameBounds">
+    <option name="x" value="-1620" />
+    <option name="y" value="-17" />
     <option name="width" value="1680" />
-    <option name="height" value="1050" />
+    <option name="height" value="877" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -228,7 +223,7 @@
       <workItem from="1562960781120" duration="328000" />
       <workItem from="1562961485428" duration="1418000" />
       <workItem from="1563202071232" duration="3514000" />
-      <workItem from="1564494074390" duration="3767000" />
+      <workItem from="1564494074390" duration="5243000" />
     </task>
     <task id="LOCAL-00001" summary="NEW EDITS">
       <created>1562961534939</created>
@@ -251,24 +246,30 @@
       <option name="project" value="LOCAL" />
       <updated>1562962401077</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="NEW EDITION">
+      <created>1564497879034</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1564497879034</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="9027000" />
+    <option name="totallyTimeSpent" value="10503000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18366094" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.4164619" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
       <window_info id="Favorites" order="4" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.2671674" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.2671674" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -278,7 +279,7 @@
       <window_info anchor="bottom" id="Spring" order="9" />
       <window_info anchor="bottom" id="Database Changes" order="10" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="12" weight="0.32849604" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.32832617" />
       <window_info anchor="bottom" id="Terminal" order="13" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -331,7 +332,7 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/gov/va/research/ir/model/SearchResult.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
-          <caret line="28" column="2" lean-forward="true" selection-start-line="28" selection-start-column="2" selection-end-line="28" selection-end-column="2" />
+          <caret line="28" column="2" selection-start-line="28" selection-start-column="2" selection-end-line="28" selection-end-column="2" />
           <folding>
             <element signature="e#0#8272#0" expanded="true" />
           </folding>
@@ -347,8 +348,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/gov/va/research/ir/model/DAOHealthFacts.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="309">
-          <caret line="956" lean-forward="true" selection-start-line="956" selection-end-line="956" />
+        <state relative-caret-position="225">
+          <caret line="1009" lean-forward="true" selection-start-line="1009" selection-end-line="1009" />
         </state>
       </provider>
     </entry>
