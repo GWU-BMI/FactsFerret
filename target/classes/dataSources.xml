@@ -59,14 +59,15 @@
 		</constructor-arg>
 	</bean>
 
-	<bean id="QueryExpander" class="gov.va.research.ir.model.QueryExpander" lazy-init="true">
-		<property name="baseAddress" value="http://vhacdwnapp01:8080" />
-		<property name="path" value="/queryExpansion/ex/synonyms/10" />
-	</bean>
-
 	<!--<bean id="QueryExpander" class="gov.va.research.ir.model.QueryExpander" lazy-init="true">-->
-		<!--<property name="baseAddress" value="http://qtzeng.smhs.gwu.edu:8080" />-->
-		<!--<property name="path" value="/queryExpansion/ex/topics/10" />-->
+		<!--<property name="baseAddress" value="http://vhacdwnapp01:8080" />-->
+		<!--<property name="path" value="/queryExpansion/ex/synonyms/10" />-->
 	<!--</bean>-->
+
+	<!-- for Query Recommendation      -->
+	<bean id="QueryExpander" class="gov.va.research.ir.model.QueryExpander" lazy-init="true">
+		<property name="baseAddress" value="http://qtzeng.smhs.gwu.edu:8080" />
+		<property name="path" value="/queryExpansion/ex/topics/10" />
+	</bean>
 
 </beans>

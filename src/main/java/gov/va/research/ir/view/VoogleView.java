@@ -561,6 +561,7 @@ public class VoogleView implements SearchResultDisplayer<SearchPanel.SearchRow> 
 				}
 			}
 		};
+
 		JButton btnOK = new JButton("OK");
 		btnOK.setActionCommand("OK");
 		btnOK.addActionListener(al);
@@ -942,6 +943,9 @@ public class VoogleView implements SearchResultDisplayer<SearchPanel.SearchRow> 
 	 * @see
 	 * gov.va.research.ir.view.SearchResultDisplayer#doQueryRecommendation()
 	 */
+
+
+
 	public void doQueryRecommendation(final Collection<String> terms) {
 		final Collection<JCheckBox> queryRecommendations = new ArrayList<JCheckBox>(terms.size());
 		ThreadUtils.runOnEDT(new Runnable() {
@@ -1014,6 +1018,11 @@ public class VoogleView implements SearchResultDisplayer<SearchPanel.SearchRow> 
 			}
 		});
 	}
+
+
+
+
+
 
 	public void setState(final ViewState state) {
 		ThreadUtils.runOnEDT(new Runnable() {

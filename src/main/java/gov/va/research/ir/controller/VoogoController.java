@@ -414,7 +414,7 @@ public class VoogoController implements ActionListener, PropertyChangeListener, 
 //                        }
 //                    }
 
-                    docTextTerms.add("influenza");
+                    docTextTerms.add("heart failure");
                   //  fieldValueMap.get(Field.DIAGNOSIS).get(0).term
                     recommendedTerms = new ArrayList<String>();
                     if (docTextTerms.size() > 0) {
