@@ -221,7 +221,7 @@ public class VoogleView implements SearchResultDisplayer<SearchPanel.SearchRow> 
 
 				queryRecommendationButton = new JButton("Query Recommendation");
 				queryRecommendationButton.setActionCommand(Command.QUERYRECOMMENDATION.toString());
-				queryRecommendationButton.setVisible(true);
+				queryRecommendationButton.setVisible(false);
 
 				queryRecommendationButton.addActionListener(actionListener);
 				optionsPanel.add(queryRecommendationButton);

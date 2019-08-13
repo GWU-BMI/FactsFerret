@@ -64,10 +64,10 @@ public class SearchPanel extends JPanel {
 		setLayout(new GridBagLayout());
 		setBackground(Color.WHITE);
 
-		JLabel fieldLabel = new JLabel("         Condition");
+		JLabel fieldLabel = new JLabel("Field:");
 		qualifierLabel = new JLabel("Name:");
 		qualifierLabel.setVisible(false);
-		JLabel valueLabel = new JLabel("");
+		JLabel valueLabel = new JLabel("Value:");
 
 		//add by Huijuan for an additional button for drug
 
@@ -137,8 +137,7 @@ public class SearchPanel extends JPanel {
 				c.gridheight = 1;
 				c.anchor = GridBagConstraints.FIRST_LINE_START;
 				add(dr.searchRow.boolBox, c);
-
-	//			dr.searchRow.boolBox;
+				dr.searchRow.boolBox.setSelectedIndex(1);
 				c.gridx = 1;
 				c.gridy = maxGridY;
 				c.gridwidth = 1;
@@ -180,7 +179,7 @@ public class SearchPanel extends JPanel {
 				c.gridwidth = 1;
 				c.gridheight = 1;
 				c.anchor = GridBagConstraints.FIRST_LINE_START;
-//				add(dr.searchRow.selectICD9codeButton, c);
+				add(dr.searchRow.selectICD9codeButton, c);
 
 				//added by Huijuan 09/08/2017
 				c.gridx = 4;
@@ -248,7 +247,7 @@ public class SearchPanel extends JPanel {
 			this.searchRow.qualifierField.setVisible(false);
 			this.searchRow.selectDrugButton.setVisible(false);
 			this.searchRow.selectDiagnosisButton.setVisible(false);
-//			this.searchRow.selectICD9codeButton.setVisible(false);
+			this.searchRow.selectICD9codeButton.setVisible(false);
 			this.searchRow.selectLabButton.setVisible(false);
 			this.searchRow.comboBox.setMaximumRowCount(SEARCHABLE_FIELDS_ARR.length);
 			this.searchRow.comboBox.addActionListener(new ActionListener() {
@@ -256,8 +255,8 @@ public class SearchPanel extends JPanel {
 				public void actionPerformed(ActionEvent ae) {
 					Field newField = (Field)((JComboBox<Field>)ae.getSource()).getSelectedItem();
 					searchRow.setQualifierFieldVisible(newField == Field.LAB);
-					searchRow.setSelectButtonVisible(newField == Field.DRUGS);
-					searchRow.setSelectDiagButtonVisible(newField == Field.ICD9DESCRIPTION);
+					searchRow.setSelectButtonVisible(newField == Field.MEDICATION);   //-drug
+					searchRow.setSelectDiagButtonVisible(newField == Field.DIAGNOSIS);  //ICD9DESCRIPTION
 					searchRow.setSelectICD9CODEButtonVisible(newField==Field.ICD9CODE);
 					searchRow.setSelectLabButtonVisible(newField==Field.LAB);
 				}
@@ -280,7 +279,7 @@ public class SearchPanel extends JPanel {
 
 			this.searchRow.selectDrugButton.addActionListener(al);
 			this.searchRow.selectDiagnosisButton.addActionListener(al);
-//			this.searchRow.selectICD9codeButton.addActionListener(al);
+			this.searchRow.selectICD9codeButton.addActionListener(al);
 			this.searchRow.selectLabButton.addActionListener(al);
 
 			this.rmRowButton.addActionListener(new ActionListener() {
@@ -309,13 +308,12 @@ public class SearchPanel extends JPanel {
 							@Override
 							public void run() {
 								sp.remove(dr.searchRow.boolBox);
-
 								sp.remove(dr.searchRow.comboBox);
 								sp.remove(dr.searchRow.qualifierField);
 								sp.remove(dr.searchRow.valueField);
 								sp.remove(dr.searchRow.selectDrugButton);
 								sp.remove(dr.searchRow.selectDiagnosisButton);
-					//			sp.remove(dr.searchRow.selectICD9codeButton);
+								sp.remove(dr.searchRow.selectICD9codeButton);
 								sp.remove(dr.searchRow.selectLabButton);
 								sp.remove(dr.rmRowButton);
 								if (removedGridY == addRowButtonGridY) {
@@ -351,7 +349,6 @@ public class SearchPanel extends JPanel {
 			parent.remove(searchRow.qualifierField);
 			parent.remove(searchRow.comboBox);
 			parent.remove(searchRow.boolBox);
-
 			parent.remove(rmRowButton);
 			parent.remove(addRowButton);
 			parent.add(rmRowButton);
@@ -375,14 +372,13 @@ public class SearchPanel extends JPanel {
 		final public JTextField qualifierField;
 		final public JTextField valueField;
 		final JComboBox<Field> comboBox;
-		final JButton boolBox;
-
+		final JComboBox<String> boolBox;
 		final Container parent;
 
 		//Huijuan
 		final public JButton selectDrugButton;
 		final public JButton selectDiagnosisButton;
-//		final public JButton selectICD9codeButton;
+		final public JButton selectICD9codeButton;
 		final public JButton selectLabButton;
 
 		SearchRow(Container parent) {
@@ -391,26 +387,19 @@ public class SearchPanel extends JPanel {
 			this.qualifierField.setPreferredSize(QUALIFIER_DIM);
 			this.comboBox = new JComboBox<>(SEARCHABLE_FIELDS_ARR);
 			this.comboBox.setPreferredSize(FIELD_CHOOSER_DIM);
-			this.boolBox = new JButton("AND");//JComboBox<String>(new String[] { AND, OR/*, NOT*/ });
+			this.boolBox = new JComboBox<String>(new String[] { AND, OR/*, NOT*/ });
 			this.boolBox.setPreferredSize(BOOL_DIM);
-
 			this.valueField = new JTextField(25);
 			this.valueField.setPreferredSize(VALUE_DIM);
 
-
-
-
-			this.selectDrugButton = new JButton("select drugs");
+			this.selectDrugButton = new JButton("Add similar medications");
 			selectDrugButton.setActionCommand(Command.SELECTDRUGS.toString());
 
-			this.selectDiagnosisButton = new JButton("select diagnosis");
+			this.selectDiagnosisButton = new JButton("Add similar diagnosis");
 			selectDiagnosisButton.setActionCommand(Command.SELECTDIAGNOSIS.toString());
 
-
-//			this.selectICD9codeButton = new JButton("select ICD9 code");
-//			selectICD9codeButton.setActionCommand(Command.SELECTICD9CODE.toString());
-
-
+			this.selectICD9codeButton = new JButton("Add similar ICD9 codes");
+			selectICD9codeButton.setActionCommand(Command.SELECTICD9CODE.toString());
 
 			this.selectLabButton = new JButton("select lab");
 			selectLabButton.setActionCommand(Command.SELECTLAB.toString());
@@ -478,9 +467,9 @@ public class SearchPanel extends JPanel {
 			ThreadUtils.runOnEDT(new Runnable() {
 				@Override
 				public void run() {
-//					selectICD9codeButton.setVisible(visible);
-//					selectICD9codeButton.revalidate();
-//					selectICD9codeButton.repaint();
+					selectICD9codeButton.setVisible(visible);
+					selectICD9codeButton.revalidate();
+					selectICD9codeButton.repaint();
 					valueField.revalidate();
 					valueField.repaint();
 					if (parent != null) {
@@ -516,12 +505,12 @@ public class SearchPanel extends JPanel {
 			return this.comboBox.getSelectedItem().toString();
 		}
 		public SearchTerm toSearchTerm() {
-			return new SearchTerm(this.valueField.getText(), getField(this.comboBox.getSelectedItem().toString()), BoolOp.valueOf(boolBox.getText().toUpperCase()), this.qualifierField.getText());
+			return new SearchTerm(this.valueField.getText(), getField(this.comboBox.getSelectedItem().toString()),
+					BoolOp.valueOf(boolBox.getSelectedItem().toString().toUpperCase()), this.qualifierField.getText());
 		}
 		public void setBoolBoxVisible(final boolean visible) {
-			this.boolBox.setVisible(visible);
-			this.boolBox.setEnabled(false);
-
+			this.boolBox.setVisible(false);
+			this.boolBox.setEnabled(true);
 		}
 	}
 

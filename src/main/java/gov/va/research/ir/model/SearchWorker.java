@@ -8,6 +8,7 @@ import gov.va.research.ir.model.SearchResult.Patient;
 import gov.va.research.ir.model.SearchResult.PDiag;
 import gov.va.research.ir.model.SearchResult.PMedication;
 import gov.va.research.ir.model.SearchResult.PLResult;
+import gov.va.vinci.nlp.qeUtils.domain.TermWeight;
 import gov.va.vinci.nlp.snip.Snippet;
 
 import java.io.BufferedWriter;
@@ -243,6 +244,12 @@ public class SearchWorker extends SwingWorker<Long, SearchResult.Patient> {
 	public List<PDiag> getDiagnoses(final String patientId) throws SQLException {
 		return dao.getDiagnoses(patientId);
 	}
+
+	public List<String> select_Diagnosis(final String q_diag) throws SQLException {
+		return dao.select_Diagnosis(q_diag);
+	}
+
+
 
 
 

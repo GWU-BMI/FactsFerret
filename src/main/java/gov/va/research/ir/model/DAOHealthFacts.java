@@ -32,6 +32,7 @@ import java.lang.*;
 import javax.sql.DataSource;
 import javax.swing.*;
 
+import gov.va.vinci.nlp.qeUtils.domain.TermWeight;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.jdbc.datasource.DataSourceUtils;
@@ -132,6 +133,10 @@ public class DAOHealthFacts implements DAODataSource {
         }
         return intDistMap;
     }
+
+
+
+
 
     private String buildQueryMatchingPatients(final List<SearchTerm> searchTerms) {
         String db = "hf_jul_2016";
@@ -895,7 +900,7 @@ public class DAOHealthFacts implements DAODataSource {
 
 
 
-    public Map<String, Integer> getDxDistribution(int topCutoff) throws SQLException {
+        public Map<String, Integer> getDxDistribution(int topCutoff) throws SQLException {
         String db = "hf_jul_2016";
 
 
@@ -912,7 +917,7 @@ public class DAOHealthFacts implements DAODataSource {
 
 
 
-    //            " select diagnosis_description, count from hf_jul_2016.Top_Condition "
+    //            " select diagnosis_description from hf_jul_2016.hf_d_diagnosis limit 4 "
 
         );
 
@@ -1163,6 +1168,7 @@ public class DAOHealthFacts implements DAODataSource {
 
 
 
+
     public Map<String, Integer> findStringDistribution2(final String selectSql)
             throws SQLException {
         Connection conn = null;
@@ -1219,6 +1225,10 @@ public class DAOHealthFacts implements DAODataSource {
         }
         return strDistMap;
     }
+
+
+
+
 
     void explainPlan2(final String selectSql, Connection conn)
             throws SQLException {
@@ -1606,6 +1616,59 @@ public class DAOHealthFacts implements DAODataSource {
 
 
     }
+
+
+
+
+    public  List<String> select_Diagnosis(String q_diag) throws SQLException {
+
+        String dSQL = " Select diagnosis_description from hf_jul_2016.hf_d_diagnosis limit 20 " ;
+
+        final List<String> rec_diag = new ArrayList<>();
+        Connection conn = null;
+
+        try {
+            conn = DataSourceUtils.getConnection(dataSource);
+            PreparedStatement ps = null;
+            try {
+                ps = conn
+                        .prepareStatement(dSQL,
+                                ResultSet.TYPE_FORWARD_ONLY,
+                                ResultSet.CONCUR_READ_ONLY);
+                activeStatements.add(ps);
+                ResultSet rs = null;
+                try {
+                    rs = ps.executeQuery();
+                } finally {
+                    if (rs != null) {
+                        while (rs.next()) {
+
+                            final String pd = (rs.getString(1));
+
+
+                            rec_diag.add(pd);
+                        }
+                        rs.close();
+                    }
+                }
+            } finally {
+                if (ps != null) {
+                    ps.close();
+                    activeStatements.remove(ps);
+                }
+            }
+        } finally {
+            if (conn != null) {
+                DataSourceUtils.releaseConnection(conn, dataSource);
+            }
+        }
+
+        return rec_diag;
+    }
+
+
+
+
 
 
 

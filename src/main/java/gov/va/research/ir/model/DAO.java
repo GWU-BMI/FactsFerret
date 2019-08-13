@@ -25,6 +25,7 @@ import java.sql.SQLException;
 import java.util.List;
 import java.util.Map;
 
+import gov.va.vinci.nlp.qeUtils.domain.TermWeight;
 import org.apache.lucene.index.CorruptIndexException;
 
 import com.vividsolutions.jts.geom.Coordinate;
@@ -232,6 +233,10 @@ public interface DAO  {
 	 * @throws SQLException
 	 */
 	public List<PDiag> getDiagnoses(final String patientId) throws SQLException; //CodeNameCount
+
+
+	public List<String> select_Diagnosis (final String q_diag) throws SQLException; //CodeNameCount
+
 	public List<PDiag> getDiagnoses2(final String patientId) throws SQLException;
 	public List<PDiag> all_encounter_condition(final String patientId) throws SQLException;
 	public List<PDiag> matching_encounter_condition(final String patientId) throws SQLException;

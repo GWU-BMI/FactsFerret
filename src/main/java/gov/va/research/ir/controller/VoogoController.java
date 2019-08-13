@@ -15,6 +15,7 @@
  */
 package gov.va.research.ir.controller;
 
+import apple.laf.JRSUIConstants;
 import gov.va.research.ir.ThreadUtils;
 import gov.va.research.ir.model.CodeNameCount;
 import gov.va.research.ir.model.Command;
@@ -44,13 +45,12 @@ import java.beans.PropertyChangeEvent;
 import java.beans.PropertyChangeListener;
 import java.io.IOException;
 import java.io.Serializable;
-import java.sql.Array;
-import java.sql.SQLException;
-import java.sql.Timestamp;
+import java.sql.*;
 import java.text.MessageFormat;
 import java.text.NumberFormat;
 import java.time.ZoneId;
 import java.util.*;
+import java.util.Date;
 import java.util.List;
 import java.util.concurrent.Executors;
 import java.util.concurrent.ScheduledExecutorService;
@@ -119,9 +119,14 @@ import org.jfree.data.time.Day;
 import org.jfree.date.MonthConstants;
 import org.jfree.ui.ApplicationFrame;
 import org.jfree.ui.RefineryUtilities;
+import org.springframework.jdbc.datasource.DataSourceUtils;
+
+import javax.sql.DataSource;
+
 
 import javax.swing.JPanel;
 
+import static javax.swing.text.StyleConstants.Size;
 import static org.jfree.chart.labels.IntervalCategoryToolTipGenerator.DEFAULT_TOOL_TIP_FORMAT_STRING;
 
 /**
@@ -148,6 +153,7 @@ public class VoogoController implements ActionListener, PropertyChangeListener, 
 
 
 
+    private DataSource dataSource;
 
 
 
@@ -342,6 +348,8 @@ public class VoogoController implements ActionListener, PropertyChangeListener, 
                     view.error("A data set must be selected");
                 }
                 break;
+
+
             case CANCEL:
                 if (search != null) {
                     try {
@@ -360,6 +368,8 @@ public class VoogoController implements ActionListener, PropertyChangeListener, 
                 }
                 view.cancelSearch();
                 break;
+
+
             case SHOWMESSAGE:
                 final JComponent source = (JComponent) e.getSource();
                 String buttonText = null;
@@ -401,8 +411,93 @@ public class VoogoController implements ActionListener, PropertyChangeListener, 
 
 
 
-            case QUERYRECOMMENDATION:
-                List<String> recommendedTerms;
+//            case QUERYRECOMMENDATION:
+//                List<String> recommendedTerms;
+//                try {
+//                    view.setState(ViewState.WAIT);
+//                    searchTerms = view.getSearchTerms();
+//                    Set<String> docTextTerms = new HashSet<String>();
+//
+////                    for (SearchTerm st : searchTerms) {
+////                        if (Field.DOCUMENT_TEXT.equals(st.field)) {
+////                            docTextTerms.add(st.term);
+////                        }
+////                    }
+//
+//                    docTextTerms.add("hallucinations");
+//                  //  fieldValueMap.get(Field.DIAGNOSIS).get(0).term
+//                    recommendedTerms = new ArrayList<String>();
+//                    if (docTextTerms.size() > 0) {
+//                        try {
+//                            while (!initialized) {
+//                                Thread.sleep(100);
+//                            }
+//                            List<TermWeight> recommendations = queryExpander.findRelatedTerms(docTextTerms);
+//                            int numAdded = 0;
+//                            for (int i = recommendations.size() - 1; i >= 0 && numAdded <= 20; i--) {
+//                                TermWeight rec = recommendations.get(i);
+//                                if (!docTextTerms.contains(rec.getWord())) {
+//                                    recommendedTerms.add(rec.getWord());
+//                                    numAdded++;
+//                                }
+//                            }
+//                        } catch (Exception e1) {
+//                            view.error(e1.getMessage());
+//                            LOG.error(e1.getMessage());
+//                            e1.printStackTrace();
+//                        }
+//                    }
+//                } finally {
+//                    view.setState(ViewState.NORMAL);
+//                }
+//                view.doQueryRecommendation(recommendedTerms);
+//                break;
+
+
+
+            case SELECTDIAGNOSIS:
+                String dsName = view.getDataSetName();
+                DAO dao = daoMap.get(dsName);
+                search = new SearchWorker(searchTerms, dao);
+                search.addPropertyChangeListener(this);
+                List<String> recommendedTerms2 = new ArrayList<String>();
+
+                try {
+
+
+                    String diagComponentName = ((Component) e.getSource()).getName();
+        //            if (docTextTerms.size() > 0) {
+
+                        try {
+                            while (!initialized) {
+                                Thread.sleep(100);
+                            }
+                            System.err.println(search.select_Diagnosis("Hallucinations"));
+                            recommendedTerms2 = search.select_Diagnosis(diagComponentName);
+
+
+                        } catch (Exception e1) {
+                            view.error(e1.getMessage());
+                            LOG.error(e1.getMessage());
+                            e1.printStackTrace();
+                        }
+              }
+
+//                catch (NullPointerException e1) {
+//
+//                }
+                  finally {
+                    view.setState(ViewState.NORMAL);
+                }
+              view.doQueryRecommendation(recommendedTerms2);
+
+                break;
+
+
+
+
+            case SELECTDRUGS:
+                List<String> recommendedTerms3;
                 try {
                     view.setState(ViewState.WAIT);
                     searchTerms = view.getSearchTerms();
@@ -414,9 +509,9 @@ public class VoogoController implements ActionListener, PropertyChangeListener, 
 //                        }
 //                    }
 
-                    docTextTerms.add("heart failure");
-                  //  fieldValueMap.get(Field.DIAGNOSIS).get(0).term
-                    recommendedTerms = new ArrayList<String>();
+                    docTextTerms.add("hallucinations");
+                    //  fieldValueMap.get(Field.DIAGNOSIS).get(0).term
+                    recommendedTerms3 = new ArrayList<String>();
                     if (docTextTerms.size() > 0) {
                         try {
                             while (!initialized) {
@@ -427,7 +522,7 @@ public class VoogoController implements ActionListener, PropertyChangeListener, 
                             for (int i = recommendations.size() - 1; i >= 0 && numAdded <= 20; i--) {
                                 TermWeight rec = recommendations.get(i);
                                 if (!docTextTerms.contains(rec.getWord())) {
-                                    recommendedTerms.add(rec.getWord());
+                                    recommendedTerms3.add(rec.getWord());
                                     numAdded++;
                                 }
                             }
@@ -440,7 +535,51 @@ public class VoogoController implements ActionListener, PropertyChangeListener, 
                 } finally {
                     view.setState(ViewState.NORMAL);
                 }
-                view.doQueryRecommendation(recommendedTerms);
+                view.doQueryRecommendation(recommendedTerms3);
+                break;
+
+
+
+            case SELECTICD9CODE:
+                List<String> recommendedTerms4;
+                try {
+                    view.setState(ViewState.WAIT);
+                    searchTerms = view.getSearchTerms();
+                    Set<String> docTextTerms = new HashSet<String>();
+
+//                    for (SearchTerm st : searchTerms) {
+//                        if (Field.DOCUMENT_TEXT.equals(st.field)) {
+//                            docTextTerms.add(st.term);
+//                        }
+//                    }
+
+                    docTextTerms.add("hallucinations");
+                    //  fieldValueMap.get(Field.DIAGNOSIS).get(0).term
+                    recommendedTerms4 = new ArrayList<String>();
+                    if (docTextTerms.size() > 0) {
+                        try {
+                            while (!initialized) {
+                                Thread.sleep(100);
+                            }
+                            List<TermWeight> recommendations = queryExpander.findRelatedTerms(docTextTerms);
+                            int numAdded = 0;
+                            for (int i = recommendations.size() - 1; i >= 0 && numAdded <= 20; i--) {
+                                TermWeight rec = recommendations.get(i);
+                                if (!docTextTerms.contains(rec.getWord())) {
+                                    recommendedTerms4.add(rec.getWord());
+                                    numAdded++;
+                                }
+                            }
+                        } catch (Exception e1) {
+                            view.error(e1.getMessage());
+                            LOG.error(e1.getMessage());
+                            e1.printStackTrace();
+                        }
+                    }
+                } finally {
+                    view.setState(ViewState.NORMAL);
+                }
+                view.doQueryRecommendation(recommendedTerms4);
                 break;
 
 
@@ -449,7 +588,6 @@ public class VoogoController implements ActionListener, PropertyChangeListener, 
 
 
             case DISPLAYDIAGNOSES:
-
                 DetailPanel detailPanel=null;
                 if (e.getSource() instanceof DetailPanel) {
                     detailPanel = (DetailPanel)e.getSource();
