@@ -2,8 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a9cef043-bbd6-426d-b87f-dca27cb38777" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/main/java/gov/va/research/ir/view/VoogleView.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gov/va/research/ir/view/VoogleView.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Voogo – Phase 1 User Guide.docx" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Voogo – Phase 1 User Guide.docx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/query.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/query.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gov/va/research/ir/FactsFerret.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gov/va/research/ir/FactsFerret.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gov/va/research/ir/controller/VoogoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gov/va/research/ir/controller/VoogoController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gov/va/research/ir/model/DAOHealthFacts.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gov/va/research/ir/model/DAOHealthFacts.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/gov/va/research/ir/view/SearchPanel.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gov/va/research/ir/view/SearchPanel.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gov/va/research/ir/controller/VoogoController$1DiagGa.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/controller/VoogoController$1DiagGa.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gov/va/research/ir/controller/VoogoController$1DrugGa.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/controller/VoogoController$1DrugGa.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gov/va/research/ir/controller/VoogoController$1E_DiagGa.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/controller/VoogoController$1E_DiagGa.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gov/va/research/ir/controller/VoogoController$1E_DrugGa.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/controller/VoogoController$1E_DrugGa.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gov/va/research/ir/controller/VoogoController$1E_Lab_Result.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/controller/VoogoController$1E_Lab_Result.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gov/va/research/ir/controller/VoogoController$1Lab_Result.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/controller/VoogoController$1Lab_Result.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gov/va/research/ir/controller/VoogoController$4$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/controller/VoogoController$4$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gov/va/research/ir/controller/VoogoController$4$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/controller/VoogoController$4$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gov/va/research/ir/controller/VoogoController$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/controller/VoogoController$4.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gov/va/research/ir/controller/VoogoController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/controller/VoogoController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gov/va/research/ir/model/DAOHealthFacts.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/model/DAOHealthFacts.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -15,10 +30,10 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/gov/va/research/ir/view/SummaryPanel.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/gov/va/research/ir/model/DAODataSource.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1590">
-              <caret line="180" column="84" selection-start-line="180" selection-start-column="84" selection-end-line="180" selection-end-column="84" />
+            <state relative-caret-position="210">
+              <caret line="28" selection-start-line="28" selection-end-line="28" />
             </state>
           </provider>
         </entry>
@@ -26,47 +41,90 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/gov/va/research/ir/view/VoogleView.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="388">
-              <caret line="233" column="8" selection-start-line="233" selection-start-column="8" selection-end-line="233" selection-end-column="8" />
+            <state relative-caret-position="149">
+              <caret line="956" column="32" selection-start-line="956" selection-start-column="32" selection-end-line="956" selection-end-column="32" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#29392#29393#0" expanded="true" />
+                <element signature="e#29416#29417#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/gov/va/research/ir/model/SearchResult.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/gov/va/research/ir/view/SearchPanel.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="330">
-              <caret line="28" column="2" selection-start-line="28" selection-start-column="2" selection-end-line="28" selection-end-column="2" />
+            <state relative-caret-position="-242">
+              <caret line="380" column="32" selection-start-line="380" selection-start-column="20" selection-end-line="380" selection-end-column="32" />
               <folding>
-                <element signature="e#0#8272#0" expanded="true" />
+                <element signature="e#3198#3199#0" expanded="true" />
+                <element signature="e#3217#3218#0" expanded="true" />
+                <element signature="e#3438#3439#0" expanded="true" />
+                <element signature="e#3457#3458#0" expanded="true" />
+                <element signature="e#11999#12000#0" expanded="true" />
+                <element signature="e#12018#12019#0" expanded="true" />
+                <element signature="e#12211#12212#0" expanded="true" />
+                <element signature="e#12289#12290#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/gov/va/research/ir/model/DAO.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3150">
+              <caret line="237" column="14" selection-start-line="237" selection-start-column="14" selection-end-line="237" selection-end-column="14" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/gov/va/research/ir/model/DAOHealthFacts.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="80">
+              <caret line="1620" lean-forward="true" selection-start-line="1620" selection-end-line="1620" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/gov/va/research/ir/FactsFerret.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-417">
+              <caret line="20" column="53" lean-forward="true" selection-start-line="20" selection-start-column="53" selection-end-line="20" selection-end-column="53" />
+              <folding>
+                <element signature="e#0#2020#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/gov/va/research/ir/model/DAOHealthFacts.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/gov/va/research/ir/controller/VoogoController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="1009" lean-forward="true" selection-start-line="1009" selection-end-line="1009" />
+            <state relative-caret-position="172">
+              <caret line="467" column="63" lean-forward="true" selection-start-line="467" selection-start-column="63" selection-end-line="467" selection-end-column="63" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#17380#17388#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/gov/va/research/ir/ThreadUtils.java">
+        <entry file="file://$PROJECT_DIR$/src/main/java/gov/va/research/ir/model/SearchWorker.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="195">
-              <caret line="27" selection-start-line="27" selection-end-line="27" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/resources/dataSources.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="80">
-              <caret line="25" selection-start-line="25" selection-end-line="25" />
+            <state relative-caret-position="202">
+              <caret line="245" column="5" lean-forward="true" selection-start-line="245" selection-start-column="5" selection-end-line="245" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -75,14 +133,36 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>factsfe</find>
-      <find>.PNG</find>
-      <find>enc_new</find>
-      <find>Query rec</find>
-      <find>medication</find>
-      <find>distribution</find>
-      <find>Query re</find>
-      <find>Search criteria</find>
+      <find>Query Re</find>
+      <find>dataSource</find>
+      <find>activeStatements</find>
+      <find>prepareStatement</find>
+      <find>getEncounters</find>
+      <find>diagCncs</find>
+      <find>select_Diagnoses</find>
+      <find>DAO</find>
+      <find>salam</find>
+      <find>seyed</find>
+      <find>search</find>
+      <find>SearchWorker</find>
+      <find>boolBox</find>
+      <find>Add similar</find>
+      <find>selectDiagnosisButton</find>
+      <find>getDxDistribution</find>
+      <find>recommendedTerms</find>
+      <find>Termweight</find>
+      <find>select_Diagnosis</find>
+      <find>TermWeight</find>
+      <find>getDiagnoses2</find>
+      <find>doQueryRecommendation</find>
+      <find>select_</find>
+      <find>SELECTDIAGNOSIS</find>
+      <find>addrow</find>
+      <find>query</find>
+      <find>doquery</find>
+      <find>add similar</find>
+      <find>getDiagnoses</find>
+      <find>similar</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -101,18 +181,24 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/scripts/start-voogo.sh" />
         <option value="$PROJECT_DIR$/src/main/java/gov/va/research/ir/Facts-Ferret.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/dataSources.xml" />
         <option value="$PROJECT_DIR$/src/main/java/gov/va/research/ir/model/SearchResult.java" />
-        <option value="$PROJECT_DIR$/src/main/java/gov/va/research/ir/model/DAOHealthFacts.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/dataSources.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/gov/va/research/ir/model/Field.java" />
         <option value="$PROJECT_DIR$/src/main/java/gov/va/research/ir/view/VoogleView.java" />
+        <option value="$PROJECT_DIR$/src/main/java/gov/va/research/ir/model/DAO.java" />
+        <option value="$PROJECT_DIR$/src/main/java/gov/va/research/ir/model/SearchWorker.java" />
+        <option value="$PROJECT_DIR$/src/main/java/gov/va/research/ir/model/DAOHealthFacts.java" />
+        <option value="$PROJECT_DIR$/src/main/java/gov/va/research/ir/FactsFerret.java" />
+        <option value="$PROJECT_DIR$/src/main/java/gov/va/research/ir/view/SearchPanel.java" />
+        <option value="$PROJECT_DIR$/src/main/java/gov/va/research/ir/controller/VoogoController.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds">
-    <option name="x" value="-1620" />
-    <option name="y" value="-17" />
-    <option name="width" value="1680" />
-    <option name="height" value="877" />
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="174" />
+    <option name="y" value="23" />
+    <option name="width" value="1512" />
+    <option name="height" value="888" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -120,6 +206,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -129,52 +216,13 @@
             </path>
             <path>
               <item name="factsferret" type="b2602c69:ProjectViewProjectNode" />
-              <item name="F" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="factsferret" type="b2602c69:ProjectViewProjectNode" />
-              <item name="F" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="factsferret" type="b2602c69:ProjectViewProjectNode" />
-              <item name="F" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="factsferret" type="b2602c69:ProjectViewProjectNode" />
-              <item name="F" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="ir" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="factsferret" type="b2602c69:ProjectViewProjectNode" />
-              <item name="F" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="ir" type="462c0819:PsiDirectoryNode" />
-              <item name="model" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="factsferret" type="b2602c69:ProjectViewProjectNode" />
-              <item name="F" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
+              <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -200,18 +248,13 @@
     </option>
   </component>
   <component name="RunManager">
-    <configuration name="FactsFerret" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+    <configuration name="FactsFerret" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="gov.va.research.ir.FactsFerret" />
       <module name="factsferret" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Application.FactsFerret" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -224,6 +267,12 @@
       <workItem from="1562961485428" duration="1418000" />
       <workItem from="1563202071232" duration="3514000" />
       <workItem from="1564494074390" duration="5243000" />
+      <workItem from="1564501929279" duration="568000" />
+      <workItem from="1564502537369" duration="16630000" />
+      <workItem from="1565193753074" duration="1985000" />
+      <workItem from="1565202694058" duration="40476000" />
+      <workItem from="1565796052007" duration="1189000" />
+      <workItem from="1565797349440" duration="10689000" />
     </task>
     <task id="LOCAL-00001" summary="NEW EDITS">
       <created>1562961534939</created>
@@ -257,30 +306,40 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10503000" />
+    <option name="totallyTimeSpent" value="82040000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
+    <frame x="0" y="23" width="1680" height="949" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.4164619" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.098280095" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
       <window_info id="Favorites" order="4" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.2671674" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3300371" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.40914708" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32932693" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" />
-      <window_info anchor="bottom" id="Spring" order="9" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32932693" />
+      <window_info anchor="bottom" id="Spring" order="9" weight="0.32932693" />
       <window_info anchor="bottom" id="Database Changes" order="10" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="12" weight="0.32832617" />
-      <window_info anchor="bottom" id="Terminal" order="13" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.070913464" />
+      <window_info anchor="bottom" id="Terminal" order="13" weight="0.32932693" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -289,6 +348,34 @@
       <window_info anchor="right" id="Maven" order="5" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
     </layout>
+    <layout-to-restore>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.098280095" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="UI Designer" order="3" />
+      <window_info id="Favorites" order="4" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3300371" />
+      <window_info active="true" anchor="bottom" id="Debug" order="3" visible="true" weight="0.40914708" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32932693" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32932693" />
+      <window_info anchor="bottom" id="Spring" order="9" weight="0.32932693" />
+      <window_info anchor="bottom" id="Database Changes" order="10" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.070913464" />
+      <window_info anchor="bottom" id="Terminal" order="13" weight="0.32932693" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Database" order="4" />
+      <window_info anchor="right" id="Maven" order="5" />
+      <window_info anchor="right" id="Palette&#9;" order="6" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
@@ -297,6 +384,81 @@
     <MESSAGE value="NEW EDITS" />
     <MESSAGE value="NEW EDITION" />
     <option name="LAST_COMMIT_MESSAGE" value="NEW EDITION" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/gov/va/research/ir/model/DAOHealthFacts.java</url>
+          <line>1624</line>
+          <properties />
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/gov/va/research/ir/controller/VoogoController.java</url>
+          <line>462</line>
+          <properties />
+          <option name="timeStamp" value="17" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/gov/va/research/ir/controller/VoogoController.java</url>
+          <line>474</line>
+          <properties />
+          <option name="timeStamp" value="18" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/gov/va/research/ir/controller/VoogoController.java</url>
+          <line>475</line>
+          <properties />
+          <option name="timeStamp" value="19" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/gov/va/research/ir/controller/VoogoController.java</url>
+          <line>467</line>
+          <properties />
+          <option name="timeStamp" value="20" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="debuggerHistoryManager">
+    <expressions id="evaluateExpression">
+      <expression>
+        <expression-string>((SearchPanel.QRButton) e.getSource()).getTextField().getText()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>((</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>((SearchPanel)((Component)e.getSource()).getParent()).rows</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>((Component)e.getSource()).getParent()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>((Component)e.getSource())</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>e.getSource().getName()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+      <expression>
+        <expression-string>e.getSource()</expression-string>
+        <language-id>JAVA</language-id>
+        <evaluation-mode>EXPRESSION</evaluation-mode>
+      </expression>
+    </expressions>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/main/java/gov/va/research/ir/Voogo.java" />
@@ -308,13 +470,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/gov/va/research/ir/view/SummaryPanel.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1590">
-          <caret line="180" column="84" selection-start-line="180" selection-start-column="84" selection-end-line="180" selection-end-column="84" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/gov/va/research/ir/ThreadUtils.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="195">
@@ -322,34 +477,122 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/dataSources.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/gov/va/research/ir/model/SearchResult.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="80">
-          <caret line="25" selection-start-line="25" selection-end-line="25" />
+        <state relative-caret-position="105">
+          <caret line="28" column="2" selection-start-line="28" selection-start-column="2" selection-end-line="28" selection-end-column="2" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/gov/va/research/ir/model/SearchResult.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/gov/va/research/ir/view/SummaryPanel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="330">
-          <caret line="28" column="2" selection-start-line="28" selection-start-column="2" selection-end-line="28" selection-end-column="2" />
+        <state relative-caret-position="1590">
+          <caret line="180" column="84" selection-start-line="180" selection-start-column="84" selection-end-line="180" selection-end-column="84" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/dataSources.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1095">
+          <caret line="73" selection-start-line="73" selection-end-line="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/gov/va/research/ir/model/Command.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="19" column="308" selection-start-line="19" selection-start-column="297" selection-end-line="19" selection-end-column="308" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/gov/va/research/ir/model/Field.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/gov/va/research/ir/model/DAODataSource.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="28" selection-start-line="28" selection-end-line="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/gov/va/research/ir/model/DAO.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3150">
+          <caret line="237" column="14" selection-start-line="237" selection-start-column="14" selection-end-line="237" selection-end-column="14" />
           <folding>
-            <element signature="e#0#8272#0" expanded="true" />
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/gov/va/research/ir/model/SearchWorker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="202">
+          <caret line="245" column="5" lean-forward="true" selection-start-line="245" selection-start-column="5" selection-end-line="245" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/gov/va/research/ir/model/DAOHealthFacts.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="80">
+          <caret line="1620" lean-forward="true" selection-start-line="1620" selection-end-line="1620" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/gov/va/research/ir/FactsFerret.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-417">
+          <caret line="20" column="53" lean-forward="true" selection-start-line="20" selection-start-column="53" selection-end-line="20" selection-end-column="53" />
+          <folding>
+            <element signature="e#0#2020#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/gov/va/research/ir/view/VoogleView.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="388">
-          <caret line="233" column="8" selection-start-line="233" selection-start-column="8" selection-end-line="233" selection-end-column="8" />
+        <state relative-caret-position="149">
+          <caret line="956" column="32" selection-start-line="956" selection-start-column="32" selection-end-line="956" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#29392#29393#0" expanded="true" />
+            <element signature="e#29416#29417#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/gov/va/research/ir/model/DAOHealthFacts.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/gov/va/research/ir/view/SearchPanel.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="225">
-          <caret line="1009" lean-forward="true" selection-start-line="1009" selection-end-line="1009" />
+        <state relative-caret-position="-242">
+          <caret line="380" column="32" selection-start-line="380" selection-start-column="20" selection-end-line="380" selection-end-column="32" />
+          <folding>
+            <element signature="e#3198#3199#0" expanded="true" />
+            <element signature="e#3217#3218#0" expanded="true" />
+            <element signature="e#3438#3439#0" expanded="true" />
+            <element signature="e#3457#3458#0" expanded="true" />
+            <element signature="e#11999#12000#0" expanded="true" />
+            <element signature="e#12018#12019#0" expanded="true" />
+            <element signature="e#12211#12212#0" expanded="true" />
+            <element signature="e#12289#12290#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/gov/va/research/ir/controller/VoogoController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="172">
+          <caret line="467" column="63" lean-forward="true" selection-start-line="467" selection-start-column="63" selection-end-line="467" selection-end-column="63" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#17380#17388#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>

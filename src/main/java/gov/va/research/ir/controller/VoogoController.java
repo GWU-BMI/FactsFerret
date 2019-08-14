@@ -465,21 +465,23 @@ public class VoogoController implements ActionListener, PropertyChangeListener, 
                 try {
 
 
-                    String diagComponentName = ((Component) e.getSource()).getName();
+                    String diagComponentName = ((SearchPanel.QRButton) e.getSource()).getTextField().getText();
         //            if (docTextTerms.size() > 0) {
 
                         try {
                             while (!initialized) {
                                 Thread.sleep(100);
                             }
-                            System.err.println(search.select_Diagnosis("Hallucinations"));
-                            recommendedTerms2 = search.select_Diagnosis(diagComponentName);
+
+                           recommendedTerms2 = search.select_Diagnosis(diagComponentName);
 
 
-                        } catch (Exception e1) {
-                            view.error(e1.getMessage());
-                            LOG.error(e1.getMessage());
-                            e1.printStackTrace();
+                            recommendedTerms2 = search.select_Diagnosis("esophoria");
+
+                          } catch (Exception e1) {
+                              view.error(e1.getMessage());
+                               LOG.error(e1.getMessage());
+                               e1.printStackTrace();
                         }
               }
 

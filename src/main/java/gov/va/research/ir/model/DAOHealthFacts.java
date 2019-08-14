@@ -1622,7 +1622,7 @@ public class DAOHealthFacts implements DAODataSource {
 
     public  List<String> select_Diagnosis(String q_diag) throws SQLException {
 
-        String dSQL = " Select diagnosis_description from hf_jul_2016.hf_d_diagnosis limit 20 " ;
+        String dSQL = " Select diagnosis_description from hf_jul_2016.hf_d_diagnosis where diagnosis_description = 'hallucinations' limit 10  " ;  //" + q_diag + "
 
         final List<String> rec_diag = new ArrayList<>();
         Connection conn = null;

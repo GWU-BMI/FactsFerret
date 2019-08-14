@@ -364,6 +364,25 @@ public class SearchPanel extends JPanel {
 		}
 	}
 
+	public static class QRButton extends JButton {
+		private JTextField textField;
+
+		public QRButton(String str) {
+			super(str);
+		}
+		public QRButton(String str, JTextField tf) {
+			super(str);
+			this.textField = tf;
+		}
+
+		public JTextField getTextField() {
+			return textField;
+		}
+		public void setTextField(final JTextField tf) {
+			this.textField = tf;
+		}
+	}
+
 	public class SearchRow {
 		public static final String AND = "And";
 		public static final String OR = "Or";
@@ -376,10 +395,10 @@ public class SearchPanel extends JPanel {
 		final Container parent;
 
 		//Huijuan
-		final public JButton selectDrugButton;
-		final public JButton selectDiagnosisButton;
-		final public JButton selectICD9codeButton;
-		final public JButton selectLabButton;
+		final public QRButton selectDrugButton;
+		final public QRButton selectDiagnosisButton;
+		final public QRButton selectICD9codeButton;
+		final public QRButton selectLabButton;
 
 		SearchRow(Container parent) {
 			this.parent = parent;
@@ -392,16 +411,16 @@ public class SearchPanel extends JPanel {
 			this.valueField = new JTextField(25);
 			this.valueField.setPreferredSize(VALUE_DIM);
 
-			this.selectDrugButton = new JButton("Add similar medications");
+			this.selectDrugButton = new QRButton("Add similar medications", this.valueField);
 			selectDrugButton.setActionCommand(Command.SELECTDRUGS.toString());
 
-			this.selectDiagnosisButton = new JButton("Add similar diagnosis");
+			this.selectDiagnosisButton = new QRButton("Add similar diagnosis", this.valueField);
 			selectDiagnosisButton.setActionCommand(Command.SELECTDIAGNOSIS.toString());
 
-			this.selectICD9codeButton = new JButton("Add similar ICD9 codes");
+			this.selectICD9codeButton = new QRButton("Add similar ICD9 codes", this.valueField);
 			selectICD9codeButton.setActionCommand(Command.SELECTICD9CODE.toString());
 
-			this.selectLabButton = new JButton("select lab");
+			this.selectLabButton = new QRButton("select lab", this.valueField);
 			selectLabButton.setActionCommand(Command.SELECTLAB.toString());
 
 		}
