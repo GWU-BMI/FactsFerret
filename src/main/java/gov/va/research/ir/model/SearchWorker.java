@@ -249,6 +249,9 @@ public class SearchWorker extends SwingWorker<Long, SearchResult.Patient> {
 		return dao.select_Diagnosis(q_diag);
 	}
 
+	public List<String> select_Medication (final String q_med) throws SQLException {
+		return dao.select_Medication (q_med);
+	}
 
 
 

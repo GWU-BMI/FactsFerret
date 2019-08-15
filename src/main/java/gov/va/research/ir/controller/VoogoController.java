@@ -476,7 +476,6 @@ public class VoogoController implements ActionListener, PropertyChangeListener, 
                            recommendedTerms2 = search.select_Diagnosis(diagComponentName);
 
 
-                            recommendedTerms2 = search.select_Diagnosis("esophoria");
 
                           } catch (Exception e1) {
                               view.error(e1.getMessage());
@@ -499,45 +498,40 @@ public class VoogoController implements ActionListener, PropertyChangeListener, 
 
 
             case SELECTDRUGS:
-                List<String> recommendedTerms3;
+                String dssName = view.getDataSetName();
+                DAO daoa = daoMap.get(dssName);
+                search = new SearchWorker(searchTerms, daoa);
+                search.addPropertyChangeListener(this);
+                List<String> recommendedTerms3 = new ArrayList<String>();
+
                 try {
-                    view.setState(ViewState.WAIT);
-                    searchTerms = view.getSearchTerms();
-                    Set<String> docTextTerms = new HashSet<String>();
 
-//                    for (SearchTerm st : searchTerms) {
-//                        if (Field.DOCUMENT_TEXT.equals(st.field)) {
-//                            docTextTerms.add(st.term);
-//                        }
-//                    }
 
-                    docTextTerms.add("hallucinations");
-                    //  fieldValueMap.get(Field.DIAGNOSIS).get(0).term
-                    recommendedTerms3 = new ArrayList<String>();
-                    if (docTextTerms.size() > 0) {
-                        try {
-                            while (!initialized) {
-                                Thread.sleep(100);
-                            }
-                            List<TermWeight> recommendations = queryExpander.findRelatedTerms(docTextTerms);
-                            int numAdded = 0;
-                            for (int i = recommendations.size() - 1; i >= 0 && numAdded <= 20; i--) {
-                                TermWeight rec = recommendations.get(i);
-                                if (!docTextTerms.contains(rec.getWord())) {
-                                    recommendedTerms3.add(rec.getWord());
-                                    numAdded++;
-                                }
-                            }
-                        } catch (Exception e1) {
-                            view.error(e1.getMessage());
-                            LOG.error(e1.getMessage());
-                            e1.printStackTrace();
+                    String diagComponentName = ((SearchPanel.QRButton) e.getSource()).getTextField().getText();
+
+
+                    try {
+                        while (!initialized) {
+                            Thread.sleep(100);
                         }
+
+                        recommendedTerms3 = search.select_Medication(diagComponentName);
+
+
+
+                    } catch (Exception e1) {
+                        view.error(e1.getMessage());
+                        LOG.error(e1.getMessage());
+                        e1.printStackTrace();
                     }
-                } finally {
+                }
+
+
+                finally {
                     view.setState(ViewState.NORMAL);
                 }
                 view.doQueryRecommendation(recommendedTerms3);
+
                 break;
 
 

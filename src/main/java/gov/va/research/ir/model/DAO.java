@@ -237,6 +237,9 @@ public interface DAO  {
 
 	public List<String> select_Diagnosis (final String q_diag) throws SQLException; //CodeNameCount
 
+	public List<String> select_Medication (final String q_med) throws SQLException; //CodeNameCount
+
+
 	public List<PDiag> getDiagnoses2(final String patientId) throws SQLException;
 	public List<PDiag> all_encounter_condition(final String patientId) throws SQLException;
 	public List<PDiag> matching_encounter_condition(final String patientId) throws SQLException;

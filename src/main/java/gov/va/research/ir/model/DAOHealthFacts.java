@@ -1622,7 +1622,24 @@ public class DAOHealthFacts implements DAODataSource {
 
     public  List<String> select_Diagnosis(String q_diag) throws SQLException {
 
-        String dSQL = " Select diagnosis_description from hf_jul_2016.hf_d_diagnosis where diagnosis_description = 'hallucinations' limit 10  " ;  //" + q_diag + "
+
+        String dSQL = " select distinct lower(str) from (\n" +
+                "                           select str\n" +
+                "                           from hf_jul_2016.mrconso_diagnosis mrcon\n" +
+                "                                  inner join (\n" +
+                "                             select cui2\n" +
+                "                             from hf_jul_2016.mrrel_diagnosis mrl\n" +
+                "                                    inner join hf_jul_2016.mrconso_diagnosis  mrm\n" +
+                "                                               on mrl.cui1 = mrm.cui and mrm.str::citext like '%"+ q_diag +"%' and rel = 'CHD'\n" +
+                "                           ) se on mrcon.cui = se.cui2 ) y\n" +
+                "where str::citext  not like '%(finding)%'\n" +
+                "  and str::citext  not like '%(disorder)%'\n" +
+                "  and str::citext not like '%"+ q_diag +"%' " +
+                "  and str::citext not like '%(%'\n" +
+                "  and str::citext not like '%[%'\n" +
+                "\n" +
+                "order by lower(str)\n";
+
 
         final List<String> rec_diag = new ArrayList<>();
         Connection conn = null;
@@ -1668,7 +1685,65 @@ public class DAOHealthFacts implements DAODataSource {
 
 
 
+    public  List<String> select_Medication(String q_med) throws SQLException {
 
+
+        String dSQL = " select distinct lower(str) from ( " +
+                "  select str " +
+                "  from hf_jul_2016.mrconso_medicaion mrcon " +
+                "  inner join ( " +
+                "  select cui2 " +
+                "  from hf_jul_2016.mrrel_medicaion mrl " +
+                "  inner join hf_jul_2016.mrconso_medicaion mrm " +
+                "  on mrl.cui1 = mrm.cui and mrm.str::citext like '%" + q_med + "%' and rel = 'CHD' " +
+                "  ) se on mrcon.cui = se.cui2 ) y " +
+                " where  str::citext not like '%" + q_med + "%' " +
+                "  and str::citext not like '%(%' " +
+                "  and str::citext not like '%[%' " +
+                " order by lower(str) ";
+
+
+        final List<String> rec_diag = new ArrayList<>();
+        Connection conn = null;
+
+        try {
+            conn = DataSourceUtils.getConnection(dataSource);
+            PreparedStatement ps = null;
+            try {
+                ps = conn
+                        .prepareStatement(dSQL,
+                                ResultSet.TYPE_FORWARD_ONLY,
+                                ResultSet.CONCUR_READ_ONLY);
+                activeStatements.add(ps);
+                ResultSet rs = null;
+                try {
+                    rs = ps.executeQuery();
+                } finally {
+                    if (rs != null) {
+                        while (rs.next()) {
+
+                            final String pd = (rs.getString(1));
+
+
+                            rec_diag.add(pd);
+                        }
+                        rs.close();
+                    }
+                }
+            } finally {
+                if (ps != null) {
+                    ps.close();
+                    activeStatements.remove(ps);
+                }
+            }
+        } finally {
+            if (conn != null) {
+                DataSourceUtils.releaseConnection(conn, dataSource);
+            }
+        }
+
+        return rec_diag;
+    }
 
 
 
