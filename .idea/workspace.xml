@@ -3,37 +3,11 @@
   <component name="ChangeListManager">
     <list default="true" id="a9cef043-bbd6-426d-b87f-dca27cb38777" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gov/va/research/ir/controller/VoogoController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gov/va/research/ir/controller/VoogoController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gov/va/research/ir/model/DAO.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gov/va/research/ir/model/DAO.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/log/query.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/query.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/gov/va/research/ir/model/DAOHealthFacts.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gov/va/research/ir/model/DAOHealthFacts.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/gov/va/research/ir/model/SearchWorker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gov/va/research/ir/model/SearchWorker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/gov/va/research/ir/controller/VoogoController$1DiagGa.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/controller/VoogoController$1DiagGa.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/gov/va/research/ir/controller/VoogoController$1DrugGa.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/controller/VoogoController$1DrugGa.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/gov/va/research/ir/controller/VoogoController$1E_DiagGa.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/controller/VoogoController$1E_DiagGa.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/gov/va/research/ir/controller/VoogoController$1E_DrugGa.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/controller/VoogoController$1E_DrugGa.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/gov/va/research/ir/controller/VoogoController$1E_Lab_Result.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/controller/VoogoController$1E_Lab_Result.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/gov/va/research/ir/controller/VoogoController$1Lab_Result.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/controller/VoogoController$1Lab_Result.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/gov/va/research/ir/controller/VoogoController$4$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/controller/VoogoController$4$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/gov/va/research/ir/controller/VoogoController$4$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/controller/VoogoController$4$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/gov/va/research/ir/controller/VoogoController$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/controller/VoogoController$4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/gov/va/research/ir/controller/VoogoController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/controller/VoogoController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/gov/va/research/ir/model/DAO.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/model/DAO.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/gov/va/research/ir/model/DAOHealthFacts$PreOrder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/model/DAOHealthFacts$PreOrder.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/classes/gov/va/research/ir/model/DAOHealthFacts.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/model/DAOHealthFacts.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/gov/va/research/ir/model/SearchWorker$10.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/model/SearchWorker$10.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/gov/va/research/ir/model/SearchWorker$11.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/model/SearchWorker$11.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/gov/va/research/ir/model/SearchWorker$12.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/model/SearchWorker$12.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/gov/va/research/ir/model/SearchWorker$13.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/model/SearchWorker$13.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/gov/va/research/ir/model/SearchWorker$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/model/SearchWorker$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/gov/va/research/ir/model/SearchWorker$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/model/SearchWorker$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/gov/va/research/ir/model/SearchWorker$4.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/model/SearchWorker$4.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/gov/va/research/ir/model/SearchWorker$5.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/model/SearchWorker$5.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/gov/va/research/ir/model/SearchWorker$6.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/model/SearchWorker$6.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/gov/va/research/ir/model/SearchWorker$7.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/model/SearchWorker$7.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/gov/va/research/ir/model/SearchWorker$8.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/model/SearchWorker$8.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/gov/va/research/ir/model/SearchWorker$9.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/model/SearchWorker$9.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/gov/va/research/ir/model/SearchWorker$ListRef.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/model/SearchWorker$ListRef.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/gov/va/research/ir/model/SearchWorker$SummaryResults.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/model/SearchWorker$SummaryResults.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/gov/va/research/ir/model/SearchWorker.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/model/SearchWorker.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -42,133 +16,150 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/gov/va/research/ir/model/DAODataSource.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="28" selection-start-line="28" selection-end-line="28" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/gov/va/research/ir/view/VoogleView.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="149">
-              <caret line="956" column="32" selection-start-line="956" selection-start-column="32" selection-end-line="956" selection-end-column="32" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#29392#29393#0" expanded="true" />
-                <element signature="e#29416#29417#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/gov/va/research/ir/view/SearchPanel.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-242">
-              <caret line="380" column="32" selection-start-line="380" selection-start-column="20" selection-end-line="380" selection-end-column="32" />
-              <folding>
-                <element signature="e#3198#3199#0" expanded="true" />
-                <element signature="e#3217#3218#0" expanded="true" />
-                <element signature="e#3438#3439#0" expanded="true" />
-                <element signature="e#3457#3458#0" expanded="true" />
-                <element signature="e#11999#12000#0" expanded="true" />
-                <element signature="e#12018#12019#0" expanded="true" />
-                <element signature="e#12211#12212#0" expanded="true" />
-                <element signature="e#12289#12290#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/gov/va/research/ir/model/DAO.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3150">
-              <caret line="237" column="14" selection-start-line="237" selection-start-column="14" selection-end-line="237" selection-end-column="14" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/gov/va/research/ir/model/DAOHealthFacts.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="81">
-              <caret line="1679" column="13" lean-forward="true" selection-start-line="1679" selection-start-column="13" selection-end-line="1679" selection-end-column="13" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/gov/va/research/ir/FactsFerret.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-417">
-              <caret line="20" column="53" lean-forward="true" selection-start-line="20" selection-start-column="53" selection-end-line="20" selection-end-column="53" />
-              <folding>
-                <element signature="e#0#2020#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/gov/va/research/ir/controller/VoogoController.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="393">
-              <caret line="522" column="52" lean-forward="true" selection-start-line="522" selection-start-column="52" selection-end-line="522" selection-end-column="52" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#17380#17388#0" expanded="true" />
-                <element signature="e#18677#18685#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/gov/va/research/ir/model/SearchWorker.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="202">
-              <caret line="245" column="5" selection-start-line="245" selection-start-column="5" selection-end-line="245" selection-end-column="5" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <splitter split-orientation="horizontal" split-proportion="0.8620209">
+      <split-first>
+        <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/gov/va/research/ir/model/DAODataSource.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="210">
+                  <caret line="28" selection-start-line="28" selection-end-line="28" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/gov/va/research/ir/view/VoogleView.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="12870">
+                  <caret line="956" column="32" selection-start-line="956" selection-start-column="32" selection-end-line="956" selection-end-column="32" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                    <element signature="e#29392#29393#0" expanded="true" />
+                    <element signature="e#29416#29417#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/gov/va/research/ir/view/SearchPanel.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="5535">
+                  <caret line="409" column="52" selection-start-line="409" selection-start-column="52" selection-end-line="409" selection-end-column="52" />
+                  <folding>
+                    <element signature="e#12186#12187#0" expanded="true" />
+                    <element signature="e#12211#12212#0" expanded="true" />
+                    <element signature="e#12261#12262#0" expanded="true" />
+                    <element signature="e#12289#12290#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/gov/va/research/ir/model/DAO.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="3150">
+                  <caret line="237" column="14" selection-start-line="237" selection-start-column="14" selection-end-line="237" selection-end-column="14" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/main/java/gov/va/research/ir/model/DAOHealthFacts.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="151">
+                  <caret line="1559" column="6" selection-start-line="1559" selection-start-column="6" selection-end-line="1559" selection-end-column="6" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                    <element signature="e#24532#24533#0" expanded="true" />
+                    <element signature="e#24584#24585#0" expanded="true" />
+                    <element signature="e#46273#46274#0" expanded="true" />
+                    <element signature="e#46312#46313#0" expanded="true" />
+                    <element signature="e#46380#46381#0" expanded="true" />
+                    <element signature="e#46426#46427#0" expanded="true" />
+                    <element signature="e#108594#108595#0" expanded="true" />
+                    <element signature="e#108638#108639#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/resources/dataSources.xml">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="249">
+                  <caret line="23" column="45" lean-forward="true" selection-start-line="23" selection-start-column="45" selection-end-line="23" selection-end-column="45" />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/gov/va/research/ir/FactsFerret.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="300">
+                  <caret line="35" column="26" selection-start-line="35" selection-start-column="26" selection-end-line="35" selection-end-column="26" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file pinned="false" current-in-tab="false">
+            <entry file="file://$PROJECT_DIR$/src/main/java/gov/va/research/ir/controller/VoogoController.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="191">
+                  <caret line="1219" column="21" selection-start-line="1219" selection-start-column="21" selection-end-line="1219" selection-end-column="21" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                    <element signature="e#17380#17388#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-first>
+      <split-second>
+        <leaf>
+          <file pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/src/main/java/gov/va/research/ir/model/DAOHealthFacts.java">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="205">
+                  <caret line="269" column="25" lean-forward="true" selection-start-line="269" selection-start-column="25" selection-end-line="269" selection-end-column="25" />
+                  <folding>
+                    <element signature="imports" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+        </leaf>
+      </split-second>
+    </splitter>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>Query Re</find>
-      <find>dataSource</find>
-      <find>activeStatements</find>
-      <find>prepareStatement</find>
-      <find>getEncounters</find>
-      <find>diagCncs</find>
-      <find>select_Diagnoses</find>
-      <find>DAO</find>
-      <find>salam</find>
-      <find>seyed</find>
-      <find>search</find>
-      <find>SearchWorker</find>
-      <find>boolBox</find>
-      <find>Add similar</find>
-      <find>selectDiagnosisButton</find>
-      <find>getDxDistribution</find>
-      <find>recommendedTerms</find>
-      <find>Termweight</find>
-      <find>TermWeight</find>
-      <find>getDiagnoses2</find>
       <find>doQueryRecommendation</find>
       <find>select_</find>
       <find>SELECTDIAGNOSIS</find>
@@ -179,7 +170,32 @@
       <find>similar</find>
       <find>select_Diagnosis</find>
       <find>getDiagnoses</find>
+      <find>pdiag</find>
+      <find>Add</find>
+      <find>Add similar</find>
+      <find>SELECTDRUGS</find>
+      <find>rel</find>
+      <find>fieldValueMap</find>
+      <find>hallucinations</find>
+      <find>icdNames_string</find>
+      <find>mysort</find>
+      <find>race</find>
+      <find>TEMP_PATIENT_TABLE</find>
+      <find>bigtab</find>
+      <find>procCncs</find>
+      <find>datasource</find>
+      <find>postgre</find>
+      <find>hf_f_lab_procedure_bigTab</find>
+      <find>sort</find>
+      <find>icd</find>
+      <find>icd-9</find>
+      <find>ICD9CODE</find>
     </findStrings>
+    <replaceStrings>
+      <replace>sort</replace>
+      <replace />
+      <replace>hf_f_lab_procedure_result_full</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="PREVIOUS_COMMIT_AUTHORS">
@@ -197,8 +213,6 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/scripts/start-voogo.sh" />
         <option value="$PROJECT_DIR$/src/main/java/gov/va/research/ir/Facts-Ferret.java" />
-        <option value="$PROJECT_DIR$/src/main/java/gov/va/research/ir/model/SearchResult.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/dataSources.xml" />
         <option value="$PROJECT_DIR$/src/main/java/gov/va/research/ir/model/Field.java" />
         <option value="$PROJECT_DIR$/src/main/java/gov/va/research/ir/view/VoogleView.java" />
         <option value="$PROJECT_DIR$/src/main/java/gov/va/research/ir/FactsFerret.java" />
@@ -206,15 +220,17 @@
         <option value="$PROJECT_DIR$/src/main/java/gov/va/research/ir/model/SearchWorker.java" />
         <option value="$PROJECT_DIR$/src/main/java/gov/va/research/ir/model/DAO.java" />
         <option value="$PROJECT_DIR$/src/main/java/gov/va/research/ir/controller/VoogoController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/gov/va/research/ir/model/SearchResult.java" />
+        <option value="$PROJECT_DIR$/src/main/resources/dataSources.xml" />
         <option value="$PROJECT_DIR$/src/main/java/gov/va/research/ir/model/DAOHealthFacts.java" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" fullScreen="true">
-    <option name="x" value="174" />
-    <option name="y" value="23" />
-    <option name="width" value="1512" />
-    <option name="height" value="888" />
+  <component name="ProjectFrameBounds">
+    <option name="x" value="1750" />
+    <option name="y" value="60" />
+    <option name="width" value="1680" />
+    <option name="height" value="896" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
@@ -223,6 +239,7 @@
     </navigator>
     <panes>
       <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -230,20 +247,16 @@
               <item name="factsferret" type="b2602c69:ProjectViewProjectNode" />
               <item name="F" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="factsferret" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Scratches and Consoles" type="1a2a3e82:ScratchProjectViewPane$MyProjectNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="editorconfig.notification" value="select  * from&#10;&quot;A/G Ratio&quot; inner join&#10;&quot;ALT/SGPT&quot; using  (adm_id) limit 4;&#10;&quot;AST/SGOT&quot;&#10;&quot;Albumin Quant&quot; inner join&#10;&quot;Albumin, Serum&quot; using adm_id&#10;&quot;Alk Phos, Serum&quot; inner join&#10;&quot;Amylase, Serum&quot; using adm_id&#10;&quot;Anion Gap&quot; inner join&#10;&quot;BNP-B Type Natriuretic Peptide&quot; using adm_id&#10;&quot;BUN/Creat Ratio&quot; inner join&#10;&quot;Base Excess&quot; using adm_id&#10;&quot;Base Excess Calc&quot; inner join&#10;&quot;Base Excess Calc, Arterial&quot; using adm_id&#10;&quot;Baso %&quot; inner join&#10;&quot;Baso Abs&quot; using adm_id&#10;&quot;Baso Abs Cnt Bld&quot; inner join&#10;&quot;Bilirubin Direct, Serum&quot; using adm_id&#10;&quot;Bilirubin Serum Quant&quot; inner join&#10;&quot;Bilirubin Total Bld mCnc&quot; using adm_id&#10;&quot;Blood Urea Nitrogen&quot; inner join&#10;&quot;Body Surface Area&quot; using adm_id&#10;&quot;Braden Scale&quot; inner join&#10;&quot;CK/CPK, Total, Serum&quot; using adm_id&#10;&quot;CO2 Total, Arterial&quot; inner join&#10;&quot;CO2 Total, Serum&quot; using adm_id&#10;&quot;Calcium Ionized&quot; inner join&#10;&quot;Calcium Quant&quot; using adm_id&#10;&quot;Calcium, Serum&quot; inner join&#10;&quot;Chol HDL&quot; using adm_id&#10;&quot;Chol Total, Serum&quot; inner join&#10;&quot;Cl, Serum&quot; using adm_id&#10;&quot;Creatinine, Serum Quant&quot; inner join&#10;&quot;Diff Bands&quot; using adm_id&#10;&quot;Diff Bands, Abs&quot; inner join&#10;&quot;Diff Blast&quot; using adm_id&#10;&quot;Diff Nucleated RBC&quot; inner join&#10;&quot;Diff, Eosinophil %&quot; using adm_id&#10;&quot;Diff, Eosinophil Abs Quant Bld&quot; inner join&#10;&quot;Diff, Eosinophil Count %&quot; using adm_id&#10;&quot;Diff, Eosinophil Count, Abs&quot; inner join&#10;&quot;Diff, Granulocyte %&quot; using adm_id&#10;&quot;FLACC Pain Scale&quot; inner join&#10;&quot;GFR/BSA Pred Black SerPl MDRD ArVRat&quot; using adm_id&#10;&quot;GFR/BSA Pred non black SerPl MDRD ArVRat&quot; inner join&#10;&quot;Glasgow Coma Score&quot; using adm_id&#10;&quot;Globulin, Serum&quot; inner join&#10;&quot;Glomerular Filtration Rate&quot; using adm_id&#10;&quot;Glomerular Filtration Rate, Est&quot; inner join&#10;&quot;Glucose Stick/Meter WBlood POC&quot; using adm_id&#10;&quot;Glucose W Blood Quant&quot; inner join&#10;&quot;Glucose, Serum Quant&quot; using adm_id&#10;&quot;HCO3, Arterial&quot; inner join&#10;&quot;HR Apical&quot; using adm_id&#10;&quot;HR Monitored&quot; inner join&#10;&quot;Hgb A1C&quot; using adm_id&#10;&quot;INR Platelet Poor Plasma&quot; inner join&#10;&quot;Imm Granulocytes Cnt Bld Auto, %&quot; using adm_id&#10;&quot;Imm Granulocytes Cnt Bld Auto, Abs&quot; inner join&#10;&quot;International Normalized Ratio&quot; using adm_id&#10;&quot;Iron, Serum&quot; inner join&#10;&quot;Lactic Acid Blood&quot; using adm_id&#10;&quot;Lactic Dehydrogenase&quot; inner join&#10;&quot;Lipase, Serum&quot; using adm_id&#10;&quot;Lymph %&quot; inner join&#10;&quot;Lymph Abs Cnt&quot; using adm_id&#10;&quot;Lymphocytes Cnt Bld Auto,%&quot; inner join&#10;&quot;Lymphocytes Cnt Bld Auto,Abs&quot; using adm_id&#10;&quot;Lymphocytes NFr Bld Auto&quot; inner join&#10;&quot;MCH Concentration&quot; using adm_id&#10;&quot;Magnesium, Serum/Plasma&quot; inner join&#10;&quot;Mean Corpuscular Hemoglobin&quot; using adm_id&#10;&quot;Mean Corpuscular Volume&quot; inner join&#10;&quot;Mean Platelet Volume&quot; using adm_id&#10;&quot;Mono %&quot; inner join&#10;&quot;Mono Abs Cnt Bld&quot; using adm_id&#10;&quot;Neutrophil %&quot; inner join&#10;&quot;Neutrophil Abs Bld Cnt&quot; using adm_id&#10;&quot;Neutrophil Seg&quot; inner join&#10;&quot;Nucleated RBC Ratio, Blood Auto&quot; using adm_id&#10;&quot;PCO2, Arterial&quot; inner join&#10;&quot;PO2, Arterial&quot; using adm_id&#10;&quot;PT Time PPP&quot; inner join&#10;&quot;PTT/APTT PPP&quot; using adm_id&#10;&quot;Pain Score&quot; inner join&#10;&quot;Peak inspiratory pressure&quot; using adm_id&#10;&quot;Phosphorus, Serum&quot; inner join&#10;&quot;Platelet Count&quot; using adm_id&#10;&quot;Potassium, Serum&quot; inner join&#10;&quot;Protein Total, Serum&quot; using adm_id&#10;&quot;Pulse Oximetry&quot; inner join&#10;&quot;Pulse Peripheral&quot; using adm_id&#10;&quot;QRS Duration&quot; inner join&#10;&quot;QT Interval&quot; using adm_id&#10;&quot;Red Blood Cell Distribution Width&quot; inner join&#10;&quot;Resp Rt&quot; using adm_id&#10;&quot;Resp Rt Tot&quot; inner join&#10;&quot;SaO2 %, Arterial&quot; using adm_id&#10;&quot;Sodium, Serum&quot; inner join&#10;&quot;Specific Gravity Urine&quot; using adm_id&#10;&quot;Temp Axillary&quot; inner join&#10;&quot;Temp Oral&quot; using adm_id&#10;&quot;Temp Temporal Artery&quot; inner join&#10;&quot;Temp Tympanic&quot; using adm_id&#10;&quot;Thyroid Stimulating Hormone&quot; inner join&#10;&quot;Tidal Volume&quot; using adm_id&#10;&quot;Triglyceride, Serum&quot; inner join&#10;&quot;Troponin I&quot; using adm_id&#10;&quot;Troponin T S/Pl&quot; inner join&#10;&quot;UA Red Blood Cell&quot; using adm_id&#10;&quot;UA Urobilinogen&quot; inner join&#10;&quot;UA WBC&quot; using adm_id&#10;&quot;Vitamin B12, Serum&quot; inner join&#10;&quot;bmi&quot; using adm_id&#10;&quot;ckmb&quot; inner join&#10;&quot;co2&quot; using adm_id&#10;dbp inner join&#10;etco2 using adm_id&#10;fio2 inner join&#10;hco3 using adm_id&#10;hct inner join&#10;height using adm_id&#10;hgb inner join&#10;hr using adm_id&#10;magnesium using adm_id&#10;map inner join&#10;&quot;pH, Arterial&quot; using adm_id&#10;&quot;pH, Urine&quot; inner join&#10;&quot;pao2&quot; using adm_id&#10;&quot;pco2&quot; inner join&#10;&quot;peep&quot; using adm_id&#10;&quot;po2&quot; inner join&#10;&quot;pt&quot; using adm_id&#10;&quot;ptt&quot; inner join&#10;&quot;rbc&quot; using adm_id&#10;&quot;sbp&quot; inner join&#10;&quot;so2&quot; using adm_id&#10;&quot;tco2&quot; inner join&#10;&quot;temp&quot; using adm_id&#10;&quot;vital_training0&quot; inner join&#10;&quot;vital_training3&quot; using adm_id&#10;&quot;wbc&quot; inner join&#10;&quot;weight&quot; using adm_id&#10;" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="project.structure.last.edited" value="Project" />
@@ -263,7 +276,14 @@
       </list>
     </option>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.FactsFerret">
+    <configuration name="DAOHealthFacts" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="gov.va.research.ir.model.DAOHealthFacts" />
+      <module name="factsferret" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="FactsFerret" type="Application" factoryName="Application" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="gov.va.research.ir.FactsFerret" />
       <module name="factsferret" />
@@ -271,6 +291,11 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.DAOHealthFacts" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -288,7 +313,13 @@
       <workItem from="1565193753074" duration="1985000" />
       <workItem from="1565202694058" duration="40476000" />
       <workItem from="1565796052007" duration="1189000" />
-      <workItem from="1565797349440" duration="21358000" />
+      <workItem from="1565797349440" duration="24212000" />
+      <workItem from="1566238085864" duration="250000" />
+      <workItem from="1567015936196" duration="138000" />
+      <workItem from="1568384571357" duration="4612000" />
+      <workItem from="1568646412834" duration="30059000" />
+      <workItem from="1568906036215" duration="1546000" />
+      <workItem from="1569871378769" duration="9597000" />
     </task>
     <task id="LOCAL-00001" summary="NEW EDITS">
       <created>1562961534939</created>
@@ -318,11 +349,18 @@
       <option name="project" value="LOCAL" />
       <updated>1564497879034</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="NEW EDITION">
+      <created>1565901476306</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1565901476306</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="92709000" />
+    <option name="totallyTimeSpent" value="141765000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -334,33 +372,33 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1920" height="1080" extended-state="0" />
+    <frame x="12" y="23" width="1838" height="896" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.098280095" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.05648038" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
       <window_info id="Favorites" order="4" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49938574" visible="true" weight="0.35343036" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.40852392" />
+      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49938574" weight="0.25396827" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.40876776" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32932693" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32819906" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32932693" />
-      <window_info anchor="bottom" id="Spring" order="9" weight="0.32932693" />
+      <window_info anchor="bottom" id="Version Control" order="8" weight="0.32819906" />
+      <window_info anchor="bottom" id="Spring" order="9" weight="0.32819906" />
       <window_info anchor="bottom" id="Database Changes" order="10" />
       <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5006142" side_tool="true" weight="0.3300371" />
-      <window_info anchor="bottom" id="Messages" order="12" weight="0.070913464" />
-      <window_info anchor="bottom" id="Terminal" order="13" weight="0.32932693" />
+      <window_info anchor="bottom" id="Messages" order="12" weight="0.13388626" />
+      <window_info anchor="bottom" id="Terminal" order="13" weight="0.32819906" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Database" order="4" />
+      <window_info anchor="right" id="Database" order="4" weight="0.08783415" />
       <window_info anchor="right" id="Maven" order="5" />
       <window_info anchor="right" id="Palette&#9;" order="6" />
     </layout>
@@ -404,29 +442,35 @@
   <component name="XDebuggerManager">
     <breakpoint-manager>
       <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/gov/va/research/ir/controller/VoogoController.java</url>
           <line>462</line>
           <properties />
           <option name="timeStamp" value="17" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/gov/va/research/ir/controller/VoogoController.java</url>
           <line>474</line>
           <properties />
           <option name="timeStamp" value="18" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/gov/va/research/ir/controller/VoogoController.java</url>
           <line>475</line>
           <properties />
           <option name="timeStamp" value="19" />
         </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
+        <line-breakpoint type="java-line">
           <url>file://$PROJECT_DIR$/src/main/java/gov/va/research/ir/controller/VoogoController.java</url>
           <line>467</line>
           <properties />
           <option name="timeStamp" value="20" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/gov/va/research/ir/model/DAOHealthFacts.java</url>
+          <line>252</line>
+          <properties />
+          <option name="timeStamp" value="35" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
@@ -487,24 +531,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/gov/va/research/ir/model/SearchResult.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="28" column="2" selection-start-line="28" selection-start-column="2" selection-end-line="28" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/gov/va/research/ir/view/SummaryPanel.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1590">
           <caret line="180" column="84" selection-start-line="180" selection-start-column="84" selection-end-line="180" selection-end-column="84" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/dataSources.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1095">
-          <caret line="73" selection-start-line="73" selection-end-line="73" />
         </state>
       </provider>
     </entry>
@@ -522,10 +552,56 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/gov/va/research/ir/model/SearchWorker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2355">
+          <caret line="222" column="5" selection-start-line="222" selection-start-column="5" selection-end-line="222" selection-end-column="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/gov/va/research/ir/model/SearchResult.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="347">
+          <caret line="303" column="9" selection-start-line="303" selection-start-column="9" selection-end-line="303" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar:///Library/Java/JavaVirtualMachines/jdk1.8.0_201.jdk/Contents/Home/jre/lib/rt.jar!/sun/misc/Unsafe.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="133">
+          <caret line="353" column="23" selection-start-line="353" selection-start-column="23" selection-end-line="353" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/gov/va/research/ir/model/DAODataSource.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="28" selection-start-line="28" selection-end-line="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/gov/va/research/ir/view/VoogleView.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="12870">
+          <caret line="956" column="32" selection-start-line="956" selection-start-column="32" selection-end-line="956" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#29392#29393#0" expanded="true" />
+            <element signature="e#29416#29417#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/gov/va/research/ir/view/SearchPanel.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="5535">
+          <caret line="409" column="52" selection-start-line="409" selection-start-column="52" selection-end-line="409" selection-end-column="52" />
+          <folding>
+            <element signature="e#12186#12187#0" expanded="true" />
+            <element signature="e#12211#12212#0" expanded="true" />
+            <element signature="e#12261#12262#0" expanded="true" />
+            <element signature="e#12289#12290#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -539,70 +615,55 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/gov/va/research/ir/model/SearchWorker.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/gov/va/research/ir/controller/VoogoController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="202">
-          <caret line="245" column="5" selection-start-line="245" selection-start-column="5" selection-end-line="245" selection-end-column="5" />
+        <state relative-caret-position="191">
+          <caret line="1219" column="21" selection-start-line="1219" selection-start-column="21" selection-end-line="1219" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#17380#17388#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/gov/va/research/ir/FactsFerret.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-417">
-          <caret line="20" column="53" lean-forward="true" selection-start-line="20" selection-start-column="53" selection-end-line="20" selection-end-column="53" />
-          <folding>
-            <element signature="e#0#2020#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/gov/va/research/ir/view/VoogleView.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="149">
-          <caret line="956" column="32" selection-start-line="956" selection-start-column="32" selection-end-line="956" selection-end-column="32" />
+        <state relative-caret-position="300">
+          <caret line="35" column="26" selection-start-line="35" selection-start-column="26" selection-end-line="35" selection-end-column="26" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#29392#29393#0" expanded="true" />
-            <element signature="e#29416#29417#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/gov/va/research/ir/view/SearchPanel.java">
+    <entry file="file://$PROJECT_DIR$/src/assemble/distribution.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-242">
-          <caret line="380" column="32" selection-start-line="380" selection-start-column="20" selection-end-line="380" selection-end-column="32" />
-          <folding>
-            <element signature="e#3198#3199#0" expanded="true" />
-            <element signature="e#3217#3218#0" expanded="true" />
-            <element signature="e#3438#3439#0" expanded="true" />
-            <element signature="e#3457#3458#0" expanded="true" />
-            <element signature="e#11999#12000#0" expanded="true" />
-            <element signature="e#12018#12019#0" expanded="true" />
-            <element signature="e#12211#12212#0" expanded="true" />
-            <element signature="e#12289#12290#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="495">
+          <caret line="33" column="17" selection-start-line="33" selection-start-column="17" selection-end-line="33" selection-end-column="17" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/gov/va/research/ir/controller/VoogoController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/dataSources.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="393">
-          <caret line="522" column="52" lean-forward="true" selection-start-line="522" selection-start-column="52" selection-end-line="522" selection-end-column="52" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#17380#17388#0" expanded="true" />
-            <element signature="e#18677#18685#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="249">
+          <caret line="23" column="45" lean-forward="true" selection-start-line="23" selection-start-column="45" selection-end-line="23" selection-end-column="45" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/gov/va/research/ir/model/DAOHealthFacts.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="81">
-          <caret line="1679" column="13" lean-forward="true" selection-start-line="1679" selection-start-column="13" selection-end-line="1679" selection-end-column="13" />
+        <state relative-caret-position="151">
+          <caret line="1559" column="6" selection-start-line="1559" selection-start-column="6" selection-end-line="1559" selection-end-column="6" />
           <folding>
             <element signature="imports" expanded="true" />
+            <element signature="e#24532#24533#0" expanded="true" />
+            <element signature="e#24584#24585#0" expanded="true" />
+            <element signature="e#46273#46274#0" expanded="true" />
+            <element signature="e#46312#46313#0" expanded="true" />
+            <element signature="e#46380#46381#0" expanded="true" />
+            <element signature="e#46426#46427#0" expanded="true" />
+            <element signature="e#108594#108595#0" expanded="true" />
+            <element signature="e#108638#108639#0" expanded="true" />
           </folding>
         </state>
       </provider>

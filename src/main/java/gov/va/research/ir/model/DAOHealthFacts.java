@@ -234,21 +234,33 @@ public class DAOHealthFacts implements DAODataSource {
 
             }
             if (queryFields.contains(Field.DIAGNOSIS)){
-                //patientSQL = patientSQL + " inner join " + db + ".hf_f_diagnosis_"+year+" df on df.encounter_id=e.encounter_id " +
-                //		" inner join hf_jul_2016.hf_d_diagnosis dd on dd.diagnosis_id = df.diagnosis_id and dd.diagnosis_code='"+fieldValueMap.get(Field.ICD9).get(0).term+"'";
-                //09/08/2017
+
                 String diagnosisNames_string = fieldValueMap.get(Field.DIAGNOSIS).get(0).term;
-                String[] diagnosisNames = diagnosisNames_string.trim().split("\\|");
+
+                List myls = fieldValueMap.get(Field.DIAGNOSIS);
+
+                StringBuilder mystring = new StringBuilder();
+
+                String pre = "";
+                for ( int i=0 ; i <myls.size(); i++) {
+                    String myst = fieldValueMap.get(Field.DIAGNOSIS).get(i).term;
+                    mystring.append(pre);
+                    pre = "@";
+                    mystring.append(myst);
+           }
+
+                 String ss= mystring.toString();
+                String[] diagnosisNames = ss.trim().split("@", myls.size());
+
                 if (diagnosisNames_string.endsWith("*")){
 
                     patientSQL = patientSQL + " inner join " + db + ".hf_f_diagnosis " +  " df on df.encounter_id=e.encounter_id" +
                             " inner join hf_jul_2016.hf_d_diagnosis dd on dd.diagnosis_id = df.diagnosis_id  and dd.diagnosis_description::citext like '" + fieldValueMap.get(Field.DIAGNOSIS).get(0).term.substring(0,diagnosisNames_string.length()-1) + "%'";
-
-
-
                 }
+
                 else {
                     if (diagnosisNames.length > 1) {
+ //                   if (str.length > 1) {
                         String tmp = null;
                         for (String diagnosisName : diagnosisNames) {
                             if (tmp == null) {
@@ -261,7 +273,16 @@ public class DAOHealthFacts implements DAODataSource {
                     } else
                         patientSQL = patientSQL + " inner join " + db + ".hf_f_diagnosis df on df.encounter_id=e.encounter_id" +
                                 " inner join hf_jul_2016.hf_d_diagnosis dd on dd.diagnosis_id = df.diagnosis_id " + "   and  " +
-                                "dd.diagnosis_description::citext = '" + fieldValueMap.get(Field.DIAGNOSIS).get(0).term + "'";
+//                                "dd.diagnosis_description::citext = '" + fieldValueMap.get(Field.DIAGNOSIS).get(0).term + "'";
+                                "e.encounter_id  in (     331105662,\n" +
+                                "      331122205,\n" +
+                                "333182515,\n" +
+                                "348731076,\n" +
+                                "361120560,\n" +
+                                "361200428,\n" +
+                                "361349429,\n" +
+                                "361558113,\n" +
+                                "361661961 )  ";
 
                 }
             }
@@ -269,21 +290,40 @@ public class DAOHealthFacts implements DAODataSource {
 
 
             if (queryFields.contains(Field.ICD9CODE)){
-                String diagnosisNames_string = fieldValueMap.get(Field.ICD9CODE).get(0).term;
-                if (diagnosisNames_string.endsWith("*")){
-                    patientSQL = patientSQL + " inner join " + db + ".hf_f_diagnosis " +  " df on df.encounter_id=e.encounter_id" +
-                            " inner join hf_jul_2016.hf_d_diagnosis dd on dd.diagnosis_id = df.diagnosis_id and dd.diagnosis_code like '" + fieldValueMap.get(Field.ICD9CODE).get(0).term.substring(0,diagnosisNames_string.length()-1) + "%'";
 
+                List mylsICD = fieldValueMap.get(Field.ICD9CODE);
+
+                StringBuilder mystringICD = new StringBuilder();
+
+                String pre = "";
+                for ( int i=0 ; i <mylsICD.size(); i++) {
+                    String myst = fieldValueMap.get(Field.ICD9CODE).get(i).term;
+                    mystringICD.append(pre);
+                    pre = "@";
+                    mystringICD.append(myst);
                 }
+
+                String ss= mystringICD.toString();
+                String[] icdNames = ss.trim().split("@", mylsICD.size());
+
+
+
+
+                String icdNames_string = fieldValueMap.get(Field.ICD9CODE).get(0).term;
+
+                if (icdNames_string.endsWith("*")){
+                    patientSQL = patientSQL + " inner join " + db + ".hf_f_diagnosis " +  " df on df.encounter_id=e.encounter_id" +
+                            " inner join hf_jul_2016.hf_d_diagnosis dd on dd.diagnosis_id = df.diagnosis_id and dd.diagnosis_code like '" + fieldValueMap.get(Field.ICD9CODE).get(0).term.substring(0,icdNames_string.length()-1) + "%'";
+                }
+
                 else {
-                    String[] diagnosisNames = diagnosisNames_string.trim().split("\\|");
-                    if (diagnosisNames.length > 1) {
+                    if (icdNames.length > 1) {
                         String tmp = null;
-                        for (String diagnosisName : diagnosisNames) {
+                        for (String icdName : icdNames) {
                             if (tmp == null) {
-                                tmp = "'" + diagnosisName + "'";
+                                tmp = "'" + icdName + "'";
                             } else
-                                tmp = tmp + ",'" + diagnosisName + "'";
+                                tmp = tmp + ",'" + icdName + "'";
                         }
                         patientSQL = patientSQL + " inner join " +db + ".hf_f_diagnosis"  + " df on df.encounter_id=e.encounter_id" +
                                 " inner join hf_jul_2016.hf_d_diagnosis dd on dd.diagnosis_id = df.diagnosis_id and dd.diagnosis_code in (" + tmp + ")";
@@ -296,18 +336,34 @@ public class DAOHealthFacts implements DAODataSource {
 
 
             if (queryFields.contains(Field.MEDICATION)){
-                //08/30/2017 discover multiple drugs
+
+                List mylsMed = fieldValueMap.get(Field.MEDICATION);
+
+                StringBuilder mystringMed = new StringBuilder();
+
+                String pre = "";
+                for ( int i=0 ; i <mylsMed.size(); i++) {
+                    String mystMed = fieldValueMap.get(Field.MEDICATION).get(i).term;
+                    mystringMed.append(pre);
+                    pre = "@";
+                    mystringMed.append(mystMed);
+                }
+
+                String Medss= mystringMed.toString();
+                String[] MedNames = Medss.trim().split("@", mylsMed.size());
+
                 String drugNames_string = fieldValueMap.get(Field.MEDICATION).get(0).term;
+
                 if (drugNames_string.endsWith("*")){
                     patientSQL = patientSQL + " inner join " + db + ".hf_f_medication" +  " mf on mf.encounter_id=e.encounter_id" +
                             " inner join " + db + ".hf_d_medication md on md.medication_id = mf.medication_id and md.generic_name::citext like '" + fieldValueMap.get(Field.MEDICATION).get(0).term.substring(0,drugNames_string.length()-1) + "%'";
 
                 }
                 else {
-                    String[] drugNames = drugNames_string.trim().split("\\|");
-                    if (drugNames.length > 1) {
+
+                    if (MedNames.length > 1) {
                         String tmp = null;
-                        for (String drugName : drugNames) {
+                        for (String drugName : MedNames) {
                             if (tmp == null) {
                                 tmp = "'" + drugName + "'";
                             } else
@@ -323,9 +379,6 @@ public class DAOHealthFacts implements DAODataSource {
 
 
 
-
-
-            // Seyed
             if (queryFields.contains(Field.SURGICAL_PROCEDURE)){
 
                 String surgical_string = fieldValueMap.get(Field.SURGICAL_PROCEDURE).get(0).term;
@@ -353,9 +406,6 @@ public class DAOHealthFacts implements DAODataSource {
             }
 
 
-
-
-            //Seyed
             if (queryFields.contains(Field.CLINICAL_EVENT)){
 
                 String clinical_string = fieldValueMap.get(Field.CLINICAL_EVENT).get(0).term;
@@ -1623,22 +1673,26 @@ public class DAOHealthFacts implements DAODataSource {
     public  List<String> select_Diagnosis(String q_diag) throws SQLException {
 
 
-        String dSQL = " select distinct lower(str) from (\n" +
-                "                           select str\n" +
-                "                           from hf_jul_2016.mrconso_diagnosis mrcon\n" +
-                "                                  inner join (\n" +
-                "                             select cui2\n" +
-                "                             from hf_jul_2016.mrrel_diagnosis mrl\n" +
-                "                                    inner join hf_jul_2016.mrconso_diagnosis  mrm\n" +
-                "                                               on mrl.cui1 = mrm.cui and mrm.str::citext like '%"+ q_diag +"%' and rel = 'CHD'\n" +
-                "                           ) se on mrcon.cui = se.cui2 ) y\n" +
-                "where str::citext  not like '%(finding)%'\n" +
-                "  and str::citext  not like '%(disorder)%'\n" +
+        String dSQL = " select distinct lower(str) from ( " +
+                "                           select str " +
+                "                           from hf_jul_2016.mrconso_diagnosis mrcon " +  // sab in (ICD9 , ICD10 , MESH)
+                "                                  inner join ( " +
+                "                             select cui2 " +
+                "                             from hf_jul_2016.mrrel_diagnosis mrl " +
+                "                                    inner join hf_jul_2016.mrconso_diagnosis  mrm " +
+                "                                               on mrl.cui1 = mrm.cui and mrm.str::citext like '%"+ q_diag +"%' and rel = 'SY' " +
+                "                           ) se on mrcon.cui = se.cui2 ) y " +
+                "where str::citext  not like '%(finding)%' " +
+                "  and str::citext  not like '%(disorder)%' " +
                 "  and str::citext not like '%"+ q_diag +"%' " +
-                "  and str::citext not like '%(%'\n" +
-                "  and str::citext not like '%[%'\n" +
+                "  and str::citext not like '%(%' " +
+                "  and str::citext not like '%[%' " +
+                "  and str::citext not like '%-%' " +
+                "  and str::citext not like '%,%' " +
+                "  and str::citext not like '%:%' " +
+                "  and length(str) <30 " +
                 "\n" +
-                "order by lower(str)\n";
+                "order by lower(str) ";
 
 
         final List<String> rec_diag = new ArrayList<>();
@@ -1689,18 +1743,22 @@ public class DAOHealthFacts implements DAODataSource {
 
 
         String dSQL = " select distinct lower(str) from ( " +
-                "  select str " +
-                "  from hf_jul_2016.mrconso_medicaion mrcon " +
-                "  inner join ( " +
-                "  select cui2 " +
-                "  from hf_jul_2016.mrrel_medicaion mrl " +
-                "  inner join hf_jul_2016.mrconso_medicaion mrm " +
-                "  on mrl.cui1 = mrm.cui and mrm.str::citext like '%" + q_med + "%' and rel = 'CHD' " +
-                "  ) se on mrcon.cui = se.cui2 ) y " +
-                " where  str::citext not like '%" + q_med + "%' " +
-                "  and str::citext not like '%(%' " +
-                "  and str::citext not like '%[%' " +
-                " order by lower(str) ";
+                "                                  select str " +
+                "                                  from hf_jul_2016.mrconso_medication mrcon " +  //create table hf_jul_2016.mrconso_medication as select * from umls.mrconso where sab = 'MSH' UNION select * from umls.mrconso  where sab = 'RXNORM'  and tty = 'IN' UNION select * from umls.mrconso where sab = 'NDFRT'
+                "                                         inner join  ( " +
+                "                                    select cui2 " +
+                "                                    from hf_jul_2016.mrrel_medication mrl " +  //create table hf_jul_2016.mrrel_medication as select * from umls.mrrel where sab = 'MSH' and rel = 'CHD' UNION select * from umls.mrrel  where sab = 'RXNORM'  UNION select * from umls.mrrel where sab = 'NDFRT' and rel= 'RO' and rela='has_therapeutic_class'
+                "                                           inner join hf_jul_2016.mrconso_medication mrm " +
+                "                                                      on mrl.cui1 = mrm.cui and mrm.str::citext like '%"+ q_med+"%' " +
+                "                                  ) se on mrcon.cui = se.cui2 ) y " +
+                "                                                 where  str::citext not like '%"+ q_med+"  %' " +
+                "                                                  and str::citext not like '%(%' " +
+                "                                                  and str::citext not like '%[%' " +
+                "                                                   and str::citext not like '%/%' " +
+                "                                                   and str::citext not like '%-%' " +
+                "                                                   and str::citext not like '%mg%' " +
+                "                                                   and length(str) <30 " +
+                "order by lower(str) ";
 
 
         final List<String> rec_diag = new ArrayList<>();
@@ -2233,16 +2291,15 @@ public class DAOHealthFacts implements DAODataSource {
 
 
 
-//        String dSQL = "select l.lab_procedure_mnemonic, d.lab_procedure_group , l.lab_drawn_dt_tm , l.numeric_result ,l.mysort , l.Status " +
-//                " from hf_jul_2016.hf_f_lab_procedure_result_4 l  inner join hf_jul_2016.hf_d_lab_procedure d on l.lab_procedure_mnemonic = d.lab_procedure_mnemonic " +
-//                " inner join " + TEMP_PATIENT_TABLE+ " tpt "
-//                + "on tpt.encounter_id=l.encounter_id and  tpt.patient_id = " +patientId+ " order by   lab_procedure_mnemonic asc, lab_drawn_dt_tm asc ";
-
 
         String dSQL = "select l.lab_procedure_mnemonic, l.lab_procedure_group , l.lab_drawn_dt_tm , l.numeric_result ,l.mysort , l.Status " +
-                " from hf_jul_2016.hf_f_lab_procedure_bigTab l   " +
+                " from hf_jul_2016.hf_f_lab_procedure_result_full l   " +
                 " inner join " + TEMP_PATIENT_TABLE+ " tpt "
                 + "on tpt.encounter_id=l.encounter_id and  tpt.patient_id = " +patientId+ " order by   lab_procedure_mnemonic asc, lab_drawn_dt_tm asc ";
+
+
+
+
 
 
 
@@ -2297,7 +2354,7 @@ public class DAOHealthFacts implements DAODataSource {
 
 
         String dSQL = " select l.lab_procedure_mnemonic, l.lab_procedure_group, l.lab_drawn_dt_tm , l.numeric_result ,l.mysort, l.Status " +
-                " from hf_jul_2016.hf_f_lab_procedure_bigTab l  " +
+                " from hf_jul_2016.hf_f_lab_procedure_result_full l  " +
                 " inner join  " +  TEMP_ENCOUNTER_TABLE + "  tpt "
                 + " on tpt.encounter_id=l.encounter_id and  tpt.patient_id = " +patientId+ " order by  lab_procedure_mnemonic asc, lab_drawn_dt_tm asc ";
 
@@ -2353,7 +2410,7 @@ public class DAOHealthFacts implements DAODataSource {
 
 
         String dSQL = "select l.lab_procedure_mnemonic, l.lab_procedure_group, l.lab_drawn_dt_tm , l.numeric_result ,l.mysort , l.Status " +
-                " from hf_jul_2016.hf_f_lab_procedure_bigTab l  " +
+                " from hf_jul_2016.hf_f_lab_procedure_result_full l  " +
                 " inner join  " + TEMP_PATIENT_TABLE + " tpt "
                 + "  on tpt.encounter_id=l.encounter_id and  l.encounter_id = " + enc_id_int+ " order by   lab_procedure_mnemonic asc, lab_drawn_dt_tm asc ";
 
@@ -2405,17 +2462,17 @@ public class DAOHealthFacts implements DAODataSource {
         int enc_id_int= Integer.parseInt(enc_id);
 
         String dSQL = " select l.lab_procedure_mnemonic, l.lab_procedure_group, l.lab_drawn_dt_tm , l.numeric_result , l.mysort , l.Status " +
-                " from hf_jul_2016.hf_f_lab_procedure_bigTab l  " +
+                " from hf_jul_2016.hf_f_lab_procedure_result_full l  " +
                 " inner join  "+  TEMP_ENCOUNTER_TABLE + "  tpt "
                 + " on tpt.encounter_id= l.encounter_id  and tpt.encounter_id = " +enc_id_int+ "  order by  lab_procedure_mnemonic asc, lab_drawn_dt_tm asc ";
 
 
 
-//        String dSQL = "select dl.lab_procedure_mnemonic, fl.lab_drawn_dt_tm , fl.numeric_result ,dl.mysort , fl.Status " +
+//        String dSQL = "select dl.lab_procedure_mnemonic, fl.lab_drawn_dt_tm , fl.numeric_result ,dl.sort , fl.Status " +
 //                "from hf_jul_2016.hf_f_lab_procedure_result_2 fl inner join" +
 //                "  hf_jul_2016.hf_d_lab_procedure_test dl on fl.detail_lab_procedure_id = dl.lab_procedure_id " +
 //                " inner join  "+  TEMP_ENCOUNTER_TABLE + "  tpt "
-//                + " on tpt.encounter_id=fl.encounter_id  and tpt.encounter_id = " +enc_id_int+ "  order by mysort DESC ";
+//                + " on tpt.encounter_id=fl.encounter_id  and tpt.encounter_id = " +enc_id_int+ "  order by sort DESC ";
 
         final List<PLResult> plr = new ArrayList<>();
         Connection conn = null;
