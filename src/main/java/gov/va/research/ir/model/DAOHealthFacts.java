@@ -273,16 +273,8 @@ public class DAOHealthFacts implements DAODataSource {
                     } else
                         patientSQL = patientSQL + " inner join " + db + ".hf_f_diagnosis df on df.encounter_id=e.encounter_id" +
                                 " inner join hf_jul_2016.hf_d_diagnosis dd on dd.diagnosis_id = df.diagnosis_id " + "   and  " +
-//                                "dd.diagnosis_description::citext = '" + fieldValueMap.get(Field.DIAGNOSIS).get(0).term + "'";
-                                "e.encounter_id  in (     331105662,\n" +
-                                "      331122205,\n" +
-                                "333182515,\n" +
-                                "348731076,\n" +
-                                "361120560,\n" +
-                                "361200428,\n" +
-                                "361349429,\n" +
-                                "361558113,\n" +
-                                "361661961 )  ";
+                                "dd.diagnosis_description::citext = '" + fieldValueMap.get(Field.DIAGNOSIS).get(0).term + "'";
+
 
                 }
             }

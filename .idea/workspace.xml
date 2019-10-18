@@ -5,9 +5,6 @@
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/log/query.log" beforeDir="false" afterPath="$PROJECT_DIR$/log/query.log" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/gov/va/research/ir/model/DAOHealthFacts.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/gov/va/research/ir/model/DAOHealthFacts.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/gov/va/research/ir/model/DAOHealthFacts$PreOrder.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/model/DAOHealthFacts$PreOrder.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/gov/va/research/ir/model/DAOHealthFacts.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/gov/va/research/ir/model/DAOHealthFacts.class" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -31,132 +28,103 @@
     <select />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.8620209">
-      <split-first>
-        <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/gov/va/research/ir/model/DAODataSource.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="210">
-                  <caret line="28" selection-start-line="28" selection-end-line="28" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/gov/va/research/ir/view/VoogleView.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="12870">
-                  <caret line="956" column="32" selection-start-line="956" selection-start-column="32" selection-end-line="956" selection-end-column="32" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                    <element signature="e#29392#29393#0" expanded="true" />
-                    <element signature="e#29416#29417#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/gov/va/research/ir/view/SearchPanel.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="5535">
-                  <caret line="409" column="52" selection-start-line="409" selection-start-column="52" selection-end-line="409" selection-end-column="52" />
-                  <folding>
-                    <element signature="e#12186#12187#0" expanded="true" />
-                    <element signature="e#12211#12212#0" expanded="true" />
-                    <element signature="e#12261#12262#0" expanded="true" />
-                    <element signature="e#12289#12290#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/gov/va/research/ir/model/DAO.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="3150">
-                  <caret line="237" column="14" selection-start-line="237" selection-start-column="14" selection-end-line="237" selection-end-column="14" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/main/java/gov/va/research/ir/model/DAOHealthFacts.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="151">
-                  <caret line="1559" column="6" selection-start-line="1559" selection-start-column="6" selection-end-line="1559" selection-end-column="6" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                    <element signature="e#24532#24533#0" expanded="true" />
-                    <element signature="e#24584#24585#0" expanded="true" />
-                    <element signature="e#46273#46274#0" expanded="true" />
-                    <element signature="e#46312#46313#0" expanded="true" />
-                    <element signature="e#46380#46381#0" expanded="true" />
-                    <element signature="e#46426#46427#0" expanded="true" />
-                    <element signature="e#108594#108595#0" expanded="true" />
-                    <element signature="e#108638#108639#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/resources/dataSources.xml">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="249">
-                  <caret line="23" column="45" lean-forward="true" selection-start-line="23" selection-start-column="45" selection-end-line="23" selection-end-column="45" />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/gov/va/research/ir/FactsFerret.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="300">
-                  <caret line="35" column="26" selection-start-line="35" selection-start-column="26" selection-end-line="35" selection-end-column="26" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/src/main/java/gov/va/research/ir/controller/VoogoController.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="191">
-                  <caret line="1219" column="21" selection-start-line="1219" selection-start-column="21" selection-end-line="1219" selection-end-column="21" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                    <element signature="e#17380#17388#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-first>
-      <split-second>
-        <leaf>
-          <file pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/src/main/java/gov/va/research/ir/model/DAOHealthFacts.java">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="205">
-                  <caret line="269" column="25" lean-forward="true" selection-start-line="269" selection-start-column="25" selection-end-line="269" selection-end-column="25" />
-                  <folding>
-                    <element signature="imports" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-        </leaf>
-      </split-second>
-    </splitter>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/gov/va/research/ir/model/DAODataSource.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="28" selection-start-line="28" selection-end-line="28" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/gov/va/research/ir/view/VoogleView.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="12870">
+              <caret line="956" column="32" selection-start-line="956" selection-start-column="32" selection-end-line="956" selection-end-column="32" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#29392#29393#0" expanded="true" />
+                <element signature="e#29416#29417#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/gov/va/research/ir/view/SearchPanel.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="5535">
+              <caret line="409" column="52" selection-start-line="409" selection-start-column="52" selection-end-line="409" selection-end-column="52" />
+              <folding>
+                <element signature="e#12186#12187#0" expanded="true" />
+                <element signature="e#12211#12212#0" expanded="true" />
+                <element signature="e#12261#12262#0" expanded="true" />
+                <element signature="e#12289#12290#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/gov/va/research/ir/model/DAO.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="3150">
+              <caret line="237" column="14" selection-start-line="237" selection-start-column="14" selection-end-line="237" selection-end-column="14" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/gov/va/research/ir/model/DAOHealthFacts.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-19131">
+              <caret line="1069" column="13" lean-forward="true" selection-start-line="1069" selection-start-column="13" selection-end-line="1069" selection-end-column="13" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/resources/dataSources.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="345">
+              <caret line="23" column="45" selection-start-line="23" selection-start-column="45" selection-end-line="23" selection-end-column="45" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/gov/va/research/ir/FactsFerret.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="35" column="26" selection-start-line="35" selection-start-column="26" selection-end-line="35" selection-end-column="26" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/gov/va/research/ir/controller/VoogoController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="15885">
+              <caret line="1219" column="21" selection-start-line="1219" selection-start-column="21" selection-end-line="1219" selection-end-column="21" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -227,31 +195,16 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1750" />
-    <option name="y" value="60" />
+    <option name="y" value="23" />
     <option name="width" value="1680" />
-    <option name="height" value="896" />
+    <option name="height" value="933" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
-    <panes>
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="factsferret" type="b2602c69:ProjectViewProjectNode" />
-              <item name="F" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-    </panes>
+    <panes />
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
@@ -320,6 +273,7 @@
       <workItem from="1568646412834" duration="30059000" />
       <workItem from="1568906036215" duration="1546000" />
       <workItem from="1569871378769" duration="9597000" />
+      <workItem from="1571430917143" duration="798000" />
     </task>
     <task id="LOCAL-00001" summary="NEW EDITS">
       <created>1562961534939</created>
@@ -356,11 +310,18 @@
       <option name="project" value="LOCAL" />
       <updated>1565901476306</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="NEW EDITION">
+      <created>1571430941696</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1571430941696</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="141765000" />
+    <option name="totallyTimeSpent" value="142563000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -372,7 +333,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="12" y="23" width="1838" height="896" extended-state="0" />
+    <frame x="1750" y="23" width="1850" height="933" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info content_ui="combo" id="Project" order="0" weight="0.05648038" />
@@ -382,7 +343,7 @@
       <window_info id="Favorites" order="4" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" sideWeight="0.49938574" weight="0.25396827" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" sideWeight="0.49938574" visible="true" weight="0.9218159" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.40876776" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -573,6 +534,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/assemble/distribution.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="495">
+          <caret line="33" column="17" selection-start-line="33" selection-start-column="17" selection-end-line="33" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/gov/va/research/ir/model/DAODataSource.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
@@ -615,20 +583,16 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/gov/va/research/ir/controller/VoogoController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/resources/dataSources.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="191">
-          <caret line="1219" column="21" selection-start-line="1219" selection-start-column="21" selection-end-line="1219" selection-end-column="21" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#17380#17388#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="345">
+          <caret line="23" column="45" selection-start-line="23" selection-start-column="45" selection-end-line="23" selection-end-column="45" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/gov/va/research/ir/FactsFerret.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
+        <state relative-caret-position="180">
           <caret line="35" column="26" selection-start-line="35" selection-start-column="26" selection-end-line="35" selection-end-column="26" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -636,34 +600,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/assemble/distribution.xml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/gov/va/research/ir/controller/VoogoController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="495">
-          <caret line="33" column="17" selection-start-line="33" selection-start-column="17" selection-end-line="33" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/dataSources.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="249">
-          <caret line="23" column="45" lean-forward="true" selection-start-line="23" selection-start-column="45" selection-end-line="23" selection-end-column="45" />
+        <state relative-caret-position="15885">
+          <caret line="1219" column="21" selection-start-line="1219" selection-start-column="21" selection-end-line="1219" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/gov/va/research/ir/model/DAOHealthFacts.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="151">
-          <caret line="1559" column="6" selection-start-line="1559" selection-start-column="6" selection-end-line="1559" selection-end-column="6" />
+        <state relative-caret-position="-19131">
+          <caret line="1069" column="13" lean-forward="true" selection-start-line="1069" selection-start-column="13" selection-end-line="1069" selection-end-column="13" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#24532#24533#0" expanded="true" />
-            <element signature="e#24584#24585#0" expanded="true" />
-            <element signature="e#46273#46274#0" expanded="true" />
-            <element signature="e#46312#46313#0" expanded="true" />
-            <element signature="e#46380#46381#0" expanded="true" />
-            <element signature="e#46426#46427#0" expanded="true" />
-            <element signature="e#108594#108595#0" expanded="true" />
-            <element signature="e#108638#108639#0" expanded="true" />
           </folding>
         </state>
       </provider>
