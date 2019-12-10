@@ -15,44 +15,27 @@
  */
 package gov.va.research.ir.view;
 
-import gov.va.research.ir.SearchUtils;
-import gov.va.research.ir.ThreadUtils;
-import gov.va.research.ir.model.Command;
-import gov.va.research.ir.model.County;
-import gov.va.research.ir.model.Field;
-import gov.va.research.ir.model.SearchTerm;
-import gov.va.research.ir.model.SearchWorker;
+import static java.awt.event.ActionEvent.ACTION_LAST;
 
 import java.awt.BorderLayout;
 import java.awt.Color;
 import java.awt.Component;
-import java.awt.Image;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.awt.event.FocusEvent;
-import java.awt.event.FocusListener;
-import java.awt.image.BufferedImage;
 import java.beans.PropertyChangeEvent;
 import java.beans.PropertyChangeListener;
-import java.io.File;
 import java.io.IOException;
-import java.io.InputStream;
-import java.net.URI;
 import java.net.URISyntaxException;
 import java.net.URL;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Map;
 import java.util.concurrent.ExecutionException;
 import java.util.concurrent.ExecutorService;
 import java.util.concurrent.Executors;
 import java.util.concurrent.Future;
 
-import javax.imageio.ImageIO;
-import javax.imageio.stream.ImageInputStream;
 import javax.swing.Icon;
-import javax.swing.ImageIcon;
 import javax.swing.JComponent;
 import javax.swing.JPanel;
 import javax.swing.JScrollPane;
@@ -64,18 +47,14 @@ import javax.xml.xpath.XPathExpressionException;
 
 import org.apache.pdfbox.pdmodel.PDDocument;
 import org.apache.pdfbox.pdmodel.PDPage;
-import org.apache.pdfbox.pdmodel.edit.PDPageContentStream;
-import org.apache.pdfbox.pdmodel.font.PDFont;
-import org.apache.pdfbox.pdmodel.font.PDType1Font;
 import org.geotools.feature.SchemaException;
-import org.hibernate.metamodel.source.binder.JpaCallbackClass;
-import org.jfree.chart.plot.CategoryPlot;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.vividsolutions.jts.geom.Coordinate;
-
-import static java.awt.event.ActionEvent.ACTION_LAST;
+import gov.va.research.ir.ThreadUtils;
+import gov.va.research.ir.model.Command;
+import gov.va.research.ir.model.SearchTerm;
+import gov.va.research.ir.model.SearchWorker;
 
 /**
  * @author vhaislreddd
@@ -85,8 +64,6 @@ public class SummaryPanel extends JPanel implements PropertyChangeListener, PdfE
 	private static final long serialVersionUID = -969368587786186572L;
 	private static final Logger LOG = LoggerFactory.getLogger(SummaryPanel.class);
 	private URL loadingIconURL;
-	private static final int TOP_CUTOFF = 25;
-	private static final boolean BLOCK_PHI = false;
 
 	private JTabbedPane tabbedPane;
 	private OverviewPanel overviewPanel;
@@ -314,9 +291,7 @@ public class SummaryPanel extends JPanel implements PropertyChangeListener, PdfE
 		overviewPanel.setSaveEnabled(false);
 		// If the data source has sensitive data and the patient count is less than 10, do not display
 		final int patientCount = search.getPatientResultCount();
-		if (BLOCK_PHI && hasSensitiveData && patientCount < 10) {
-			throw new IllegalAccessException("Less than 10 matching patients");
-		}
+
 		overviewPanel.setNumMatchingPatients(patientCount);
 		//	firePropertyChange("panelUpdate", null, mapPanel);
 

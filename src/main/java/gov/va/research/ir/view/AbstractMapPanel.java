@@ -1,7 +1,7 @@
 package gov.va.research.ir.view;
 
-import com.vividsolutions.jts.geom.Coordinate;
 import org.geotools.feature.SchemaException;
+import org.locationtech.jts.geom.Coordinate;
 
 import javax.swing.*;
 import java.io.IOException;
@@ -10,7 +10,8 @@ import java.sql.SQLException;
 import java.util.Map;
 
 public abstract class AbstractMapPanel extends JPanel implements PdfExportable {
-    public abstract void reset();
+	private static final long serialVersionUID = 1L;
+	public abstract void reset();
     public abstract void dispose();
     public abstract void updateMap(final Map<Coordinate, Integer> coordinateSubtotalMap) throws IOException,
             SchemaException, SQLException, ClassNotFoundException,

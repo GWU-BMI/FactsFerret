@@ -15,8 +15,6 @@
  */
 package gov.va.research.ir.view;
 
-import gov.va.research.ir.model.County;
-
 import java.awt.HeadlessException;
 import java.util.HashMap;
 import java.util.Map;
@@ -28,8 +26,7 @@ import org.junit.AfterClass;
 import org.junit.Before;
 import org.junit.BeforeClass;
 import org.junit.Test;
-
-import com.vividsolutions.jts.geom.Coordinate;
+import org.locationtech.jts.geom.Coordinate;
 
 
 /**

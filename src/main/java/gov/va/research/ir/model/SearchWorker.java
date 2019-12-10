@@ -8,7 +8,6 @@ import gov.va.research.ir.model.SearchResult.Patient;
 import gov.va.research.ir.model.SearchResult.PDiag;
 import gov.va.research.ir.model.SearchResult.PMedication;
 import gov.va.research.ir.model.SearchResult.PLResult;
-import gov.va.vinci.nlp.qeUtils.domain.TermWeight;
 import gov.va.vinci.nlp.snip.Snippet;
 
 import java.io.BufferedWriter;
@@ -40,6 +39,7 @@ import org.apache.poi.ss.usermodel.Row;
 import org.apache.poi.ss.usermodel.Sheet;
 import org.apache.poi.ss.usermodel.Workbook;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
+import org.locationtech.jts.geom.Coordinate;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.slf4j.Marker;
@@ -61,7 +61,6 @@ import org.slf4j.MarkerFactory;
  *  See the License for the specific language governing permissions and
  *  limitations under the License.
  */
-import com.vividsolutions.jts.geom.Coordinate;
 
 /**
  * @author doug

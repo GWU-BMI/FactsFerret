@@ -26,7 +26,7 @@ import gov.va.research.ir.view.VoogleView;
 
 import java.awt.EventQueue;
 
-import org.geotools.resources.SwingUtilities;
+import javax.swing.SwingUtilities;
 
 
 /**

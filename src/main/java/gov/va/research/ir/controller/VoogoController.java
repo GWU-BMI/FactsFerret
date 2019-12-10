@@ -62,7 +62,6 @@ import javax.swing.*;
 import org.apache.commons.lang.ObjectUtils;
 import org.apache.http.util.Args;
 import org.apache.poi.hssf.util.HSSFColor;
-import org.eclipse.emf.common.util.EMap;
 import org.jfree.chart.*;
 import org.jfree.chart.axis.*;
 import org.jfree.chart.labels.*;

@@ -37,8 +37,6 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.jdbc.datasource.DataSourceUtils;
 
-import com.vividsolutions.jts.geom.Coordinate;
-
 import static java.lang.Math.abs;
 
 

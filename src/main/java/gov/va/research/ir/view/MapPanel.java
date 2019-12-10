@@ -15,17 +15,11 @@
  */
 package gov.va.research.ir.view;
 
-import gov.va.research.ir.ThreadUtils;
-import gov.va.research.ir.model.County;
-import gov.va.research.ir.model.CountyCoordinatesDataSource;
-import gov.va.research.ir.model.LatLon;
-
 import java.awt.Color;
 import java.awt.Dimension;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.Rectangle;
-import java.awt.RenderingHints;
 import java.awt.image.BufferedImage;
 import java.io.FileNotFoundException;
 import java.io.IOException;
@@ -40,8 +34,6 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
-import javax.swing.JPanel;
-
 import org.apache.pdfbox.pdmodel.PDDocument;
 import org.apache.pdfbox.pdmodel.PDPage;
 import org.apache.pdfbox.pdmodel.common.PDRectangle;
@@ -51,7 +43,7 @@ import org.geotools.data.FeatureSource;
 import org.geotools.data.FileDataStore;
 import org.geotools.data.FileDataStoreFinder;
 import org.geotools.data.simple.SimpleFeatureCollection;
-import org.geotools.feature.FeatureCollections;
+import org.geotools.feature.DefaultFeatureCollection;
 import org.geotools.feature.SchemaException;
 import org.geotools.feature.simple.SimpleFeatureBuilder;
 import org.geotools.feature.simple.SimpleFeatureTypeBuilder;
@@ -65,15 +57,17 @@ import org.geotools.renderer.GTRenderer;
 import org.geotools.renderer.lite.StreamingRenderer;
 import org.geotools.styling.SLD;
 import org.geotools.styling.Style;
+import org.locationtech.jts.geom.Coordinate;
+import org.locationtech.jts.geom.GeometryFactory;
+import org.locationtech.jts.geom.Point;
+import org.locationtech.jts.geom.PrecisionModel;
 import org.opengis.feature.simple.SimpleFeature;
 import org.opengis.feature.simple.SimpleFeatureType;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
-import com.vividsolutions.jts.geom.Coordinate;
-import com.vividsolutions.jts.geom.GeometryFactory;
-import com.vividsolutions.jts.geom.Point;
-import com.vividsolutions.jts.geom.PrecisionModel;
+import gov.va.research.ir.ThreadUtils;
+import gov.va.research.ir.model.CountyCoordinatesDataSource;
 
 /**
  * @author vhaislreddd
@@ -133,9 +127,9 @@ public class MapPanel extends AbstractMapPanel {
 	}
 
 
-	public void updateMap(final Map<Coordinate, Integer> coordinateSubtotalMap) throws IOException,
-			SchemaException, SQLException, ClassNotFoundException,
-			URISyntaxException {
+	@Override
+	public void updateMap(Map<Coordinate, Integer> coordinateSubtotalMap)
+			throws IOException, SchemaException, SQLException, ClassNotFoundException, URISyntaxException {
 		while (initializationThread.isAlive()) {
 			LOG.info("Waiting for initialization to complete");
 			try {
@@ -155,7 +149,7 @@ public class MapPanel extends AbstractMapPanel {
 		PrecisionModel precModel = gfact.getPrecisionModel();
 		SimpleFeatureBuilder fbuilder = new SimpleFeatureBuilder(loctype);
 
-		Map<Integer, SimpleFeatureCollection> sizeFeaturesMap = new HashMap<Integer, SimpleFeatureCollection>();
+		Map<Integer, DefaultFeatureCollection> sizeFeaturesMap = new HashMap<>();
 		Collection<Integer> subtotals = coordinateSubtotalMap.values();
 		List<Integer> subtotalList = null;
 		if (subtotals instanceof List) {
@@ -181,16 +175,16 @@ public class MapPanel extends AbstractMapPanel {
 			Point point = gfact.createPoint(coordinate);
 			fbuilder.add(point);
 			SimpleFeature feature = fbuilder.buildFeature(null);
-			SimpleFeatureCollection fcoll = sizeFeaturesMap.get(radius);
+			DefaultFeatureCollection fcoll = sizeFeaturesMap.get(radius);
 			if (fcoll == null) {
-				fcoll = FeatureCollections.newCollection();
+				fcoll = new DefaultFeatureCollection();//FeatureCollections.newCollection();
 				sizeFeaturesMap.put(radius, fcoll);
 			}
 			synchronized (fcoll) {
 				fcoll.add(feature);
 			}
 		}
-		for (Map.Entry<Integer, SimpleFeatureCollection> e : sizeFeaturesMap
+		for (Map.Entry<Integer, DefaultFeatureCollection> e : sizeFeaturesMap
 				.entrySet()) {
 			Style pstyle = SLD.createPointStyle("Circle",
 					CIRCLE_MARKER_OUTLINE_COLOR, CIRCLE_MARKER_FILL_COLOR,

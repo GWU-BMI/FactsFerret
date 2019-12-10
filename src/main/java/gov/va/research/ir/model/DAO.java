@@ -28,8 +28,6 @@ import java.util.Map;
 import gov.va.vinci.nlp.qeUtils.domain.TermWeight;
 import org.apache.lucene.index.CorruptIndexException;
 
-import com.vividsolutions.jts.geom.Coordinate;
-
 /**
  * @author vhaislreddd
  *
