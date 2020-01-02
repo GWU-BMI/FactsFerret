@@ -80,12 +80,12 @@ import javax.swing.UIManager;
 
 import org.apache.pdfbox.pdmodel.PDDocument;
 import org.apache.pdfbox.pdmodel.PDPage;
-import org.apache.pdfbox.pdmodel.edit.PDPageContentStream;
+import org.apache.pdfbox.pdmodel.PDPageContentStream;
+import org.apache.pdfbox.pdmodel.common.PDRectangle;
 import org.apache.pdfbox.pdmodel.font.PDFont;
 import org.apache.pdfbox.pdmodel.font.PDType1Font;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-import org.apache.pdfbox.exceptions.COSVisitorException;
 
 /**
  * @author doug
@@ -1135,7 +1135,7 @@ public class VoogleView implements SearchResultDisplayer<SearchPanel.SearchRow> 
 	@Override
 	public void saveSummary(final File file, final SearchWorker search) throws IOException, SQLException {
 		PDDocument pdf = new PDDocument();
-		PDPage pdPage = new PDPage(PDPage.PAGE_SIZE_LETTER);
+		PDPage pdPage = new PDPage(PDRectangle.LETTER);
 		pdf.addPage(pdPage);
 		PDFont font = PDType1Font.COURIER;
 		int fontHeight = Math.round((font.getFontDescriptor().getFontBoundingBox().getHeight() / 1000) * 12);
@@ -1143,7 +1143,7 @@ public class VoogleView implements SearchResultDisplayer<SearchPanel.SearchRow> 
 		contentStream.beginText();
 		contentStream.setFont(font, 12);
 		contentStream.appendRawCommands(fontHeight + " TL\n");
-		contentStream.moveTextPositionByAmount(fontHeight, PDPage.PAGE_SIZE_LETTER.getHeight() - (fontHeight * 2));
+		contentStream.moveTextPositionByAmount(fontHeight, PDRectangle.LETTER.getHeight() - (fontHeight * 2));
 		contentStream.drawString(new Date().toString());
 		contentStream.appendRawCommands("T*\n");
 		contentStream.appendRawCommands("T*\n");
@@ -1163,8 +1163,6 @@ public class VoogleView implements SearchResultDisplayer<SearchPanel.SearchRow> 
 		summaryPanel.addPdfPages(pdf);
 		try {
 			pdf.save(file);
-		} catch (COSVisitorException e) {
-			throw new IOException(e);
 		} finally {
 			pdf.close();
 		}

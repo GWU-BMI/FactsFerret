@@ -34,9 +34,10 @@ import javax.swing.JPanel;
 
 import org.apache.pdfbox.pdmodel.PDDocument;
 import org.apache.pdfbox.pdmodel.PDPage;
+import org.apache.pdfbox.pdmodel.PDPageContentStream;
 import org.apache.pdfbox.pdmodel.common.PDRectangle;
-import org.apache.pdfbox.pdmodel.edit.PDPageContentStream;
-import org.apache.pdfbox.pdmodel.graphics.xobject.PDJpeg;
+import org.apache.pdfbox.pdmodel.graphics.image.LosslessFactory;
+import org.apache.pdfbox.pdmodel.graphics.image.PDImageXObject;
 import org.jfree.chart.ChartPanel;
 import org.jfree.chart.JFreeChart;
 
@@ -111,7 +112,7 @@ public class HistogramPanel extends JPanel implements PdfExportable {
 	 */
 	@Override
 	public List<PDPage> addPdfPages(final PDDocument pdDocument) throws IOException {
-		PDRectangle pageSize = PDPage.PAGE_SIZE_LETTER;
+		PDRectangle pageSize = PDRectangle.LETTER;
 		float scale = ViewUtils.calculateScale(this.getSize().width, this.getSize().height, pageSize.getWidth(), pageSize.getHeight());
 		float targetWidth = this.getSize().width * scale;
 		float targetHeight = this.getSize().height * scale;
@@ -137,7 +138,7 @@ public class HistogramPanel extends JPanel implements PdfExportable {
 			chart.paint(g);
 			g.dispose();
 		}
-		PDJpeg jpg = new PDJpeg(pdDocument, img);
+		PDImageXObject jpg = LosslessFactory.createFromImage(pdDocument, img);
 		PDPage pdPage = new PDPage(pageSize);
 		pdDocument.addPage(pdPage);
 		PDPageContentStream contentStream = new PDPageContentStream(pdDocument, pdPage);

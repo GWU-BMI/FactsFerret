@@ -34,8 +34,8 @@ import javax.swing.border.EmptyBorder;
 
 import org.apache.pdfbox.pdmodel.PDDocument;
 import org.apache.pdfbox.pdmodel.PDPage;
+import org.apache.pdfbox.pdmodel.PDPageContentStream;
 import org.apache.pdfbox.pdmodel.common.PDRectangle;
-import org.apache.pdfbox.pdmodel.edit.PDPageContentStream;
 import org.apache.pdfbox.pdmodel.font.PDFont;
 import org.apache.pdfbox.pdmodel.font.PDType1Font;
 
@@ -128,7 +128,7 @@ public class CategoryListPanel extends JPanel implements PdfExportable {
 		List<Map.Entry<String, Integer>> valueList = new ArrayList<Map.Entry<String, Integer>>(
 				valueMap.entrySet());
 		Collections.sort(valueList, valueComparator);
-		PDRectangle pageSize = PDPage.PAGE_SIZE_LETTER;
+		PDRectangle pageSize = PDRectangle.LETTER;
 		PDPage pdPage = new PDPage(pageSize);
 		pdDocument.addPage(pdPage);
 		PDFont font = PDType1Font.COURIER;

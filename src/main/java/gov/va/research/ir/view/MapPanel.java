@@ -36,9 +36,10 @@ import java.util.Map;
 
 import org.apache.pdfbox.pdmodel.PDDocument;
 import org.apache.pdfbox.pdmodel.PDPage;
+import org.apache.pdfbox.pdmodel.PDPageContentStream;
 import org.apache.pdfbox.pdmodel.common.PDRectangle;
-import org.apache.pdfbox.pdmodel.edit.PDPageContentStream;
-import org.apache.pdfbox.pdmodel.graphics.xobject.PDJpeg;
+import org.apache.pdfbox.pdmodel.graphics.image.LosslessFactory;
+import org.apache.pdfbox.pdmodel.graphics.image.PDImageXObject;
 import org.geotools.data.FeatureSource;
 import org.geotools.data.FileDataStore;
 import org.geotools.data.FileDataStoreFinder;
@@ -255,7 +256,7 @@ public class MapPanel extends AbstractMapPanel {
 	 */
 	@Override
 	public List<PDPage> addPdfPages(final PDDocument pdDocument) throws IOException {
-		PDRectangle pageSize = PDPage.PAGE_SIZE_LETTER;
+		PDRectangle pageSize = PDRectangle.LETTER;
 		float scale = ViewUtils.calculateScale(imageBounds.width, imageBounds.height, pageSize.getWidth(), pageSize.getHeight());
 		int targetWidth = (int)(imageBounds.width * scale);
 		int targetHeight = (int)(imageBounds.height * scale);
@@ -266,8 +267,8 @@ public class MapPanel extends AbstractMapPanel {
 		g.fill(targetBounds);
 		renderer.paint(g, targetBounds, mapBounds);
 		g.dispose();
-		PDJpeg jpg = new PDJpeg(pdDocument, img);
-		PDPage pdPage = new PDPage(PDPage.PAGE_SIZE_LETTER);
+		PDImageXObject jpg = LosslessFactory.createFromImage(pdDocument, img);
+		PDPage pdPage = new PDPage(PDRectangle.LETTER);
 		pdDocument.addPage(pdPage);
 		PDPageContentStream contentStream = new PDPageContentStream(pdDocument, pdPage);
 		contentStream.drawImage(jpg, 0, pageSize.getHeight() - jpg.getHeight());

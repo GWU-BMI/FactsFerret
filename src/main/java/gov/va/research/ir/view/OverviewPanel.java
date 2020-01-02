@@ -15,26 +15,17 @@
  */
 package gov.va.research.ir.view;
 
-import gov.va.research.ir.ThreadUtils;
-import gov.va.research.ir.model.Command;
-
 import java.awt.Color;
 import java.awt.event.ActionListener;
 import java.io.IOException;
 import java.sql.SQLException;
-import java.util.Arrays;
-import java.util.List;
 
 import javax.swing.JButton;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 
-import org.apache.pdfbox.pdmodel.PDDocument;
-import org.apache.pdfbox.pdmodel.PDPage;
-import org.apache.pdfbox.pdmodel.edit.PDPageContentStream;
-import org.apache.pdfbox.pdmodel.font.PDFont;
-import org.apache.pdfbox.pdmodel.font.PDType1Font;
-
+import gov.va.research.ir.ThreadUtils;
+import gov.va.research.ir.model.Command;
 import net.miginfocom.swing.MigLayout;
 
 /**
